@@ -183,12 +183,25 @@ def cmd_predict(a):
                                   vlm_call_times_ms=[])
             continue
         spans = window_bounds(t, WIN, STRIDE)
-        scores = (ZS.score_windows(f, spans, T) if a.mode == "zeroshot"
-                  else H.predict(model, pack(f, spans), dev))
+        if a.mode == "zeroshot":
+            scores = ZS.score_windows(f, spans, T)
+            ext_scores, normed = scores, []
+        else:
+            logits = H.predict_logits(model, pack(f, spans), dev)
+            scores = (1.0 / (1.0 + np.exp(-logits))).astype(np.float32)
+            if a.video_norm:
+                ext_scores, normed = PP.video_normalise(logits, spans)
+            else:
+                ext_scores, normed = scores, []
         if a.mode == "head" and zs_cols:
             zs = ZS.score_windows(f, spans, T)
             scores[:, zs_cols] = zs[:, zs_cols]
-        ivs_raw = PP.extract(scores, spans, scale=a.scale, long_merge=a.long_merge)
+            ext_scores[:, zs_cols] = zs[:, zs_cols]
+        if normed:
+            print(f"  {v.vid}: renormalised saturated {normed}")
+        ivs_raw = PP.extract(ext_scores, spans, scale=a.scale, long_merge=a.long_merge)
+        if a.video_norm:
+            ivs_raw = PP.rescore(ivs_raw, scores, spans)
         ivs = ivs_raw
         if bank is not None:
             # Dampen (never zero) fragile-class scores on windows whose
@@ -199,17 +212,24 @@ def cmd_predict(a):
             # PP.never_silence restores the single best original interval
             # if dampening emptied a video outright (the alert-credit
             # lesson from the full VLM gate costing 9 points, PROGRESS.md SS11).
-            dampened = scores.copy()
+            dampened = ext_scores.copy()
             for w, (i0, i1, _, _) in enumerate(spans):
                 if bank.is_ood(f[i0:i1]):
                     for c in FRAGILE_CLASSES:
                         dampened[w, L2I[c]] *= 0.5
             ivs_kept = PP.extract(dampened, spans, scale=a.scale, long_merge=a.long_merge)
+            if a.video_norm:
+                ivs_kept = PP.rescore(ivs_kept, scores, spans)
             ivs = PP.never_silence(ivs_raw, ivs_kept)
         if verifier and ivs:
             from .verify import verify_intervals
             ivs = verify_intervals(verifier, v.path, ivs, keep_score=a.keep_score, k=a.vlm_frames)
+        if a.xclass_nms and ivs:
+            ivs = PP.suppress_overlaps(ivs)
         is_anom, cls, conf = PP.video_decision(scores, ivs)
+        if a.alt_classes and ivs:
+            # after video_decision: the L1 answer stays the head's top class
+            ivs = PP.add_alt_classes(ivs, scores, spans, n_alt=a.alt_classes)
         rows.append(dict(zip(COLS, [v.vid, 1, is_anom, cls, "", "",
                                     f"confidence={conf:.2f}"])))
         for iv in ivs:
@@ -551,6 +571,22 @@ def main():
                     help="comma-separated video ids to run (e.g. the 24 Level-1 clips); "
                          "others are skipped entirely. Combine with `submit` -- the arena "
                          "keeps earlier answers for videos a file doesn't mention")
+    sp.add_argument("--alt-classes", dest="alt_classes", type=int, default=0,
+                    help="also emit each interval's span under its next N best classes. "
+                         "Eval-pack arena evidence (5 Sept): false alarms are not charged, "
+                         "a match is worth ~3.5 marks -- so a second guess is free recall. "
+                         "Do NOT combine with --xclass-nms.")
+    sp.add_argument("--xclass-nms", dest="xclass_nms", action="store_true",
+                    help="drop the lower-scored of any two intervals of different classes "
+                         "that overlap at IoU>=0.5 or nest -- at most one can be right, the "
+                         "rest are guaranteed false alarms (eval pack: L2 precision 6%%)")
+    sp.add_argument("--video-norm", dest="video_norm", action="store_true",
+                    help="on videos >60s, re-express any class the head has saturated "
+                         "(baseline above its `lo`) as a z-score of its logit relative "
+                         "to that video's own baseline, so a 4-minute 'congestion=1.00 "
+                         "everywhere' becomes localised events instead of one "
+                         "video-long interval. Level-1 class/confidence is taken from "
+                         "the raw scores and is unaffected.")
     sp.add_argument("--long-merge", dest="long_merge", action="store_true",
                     help="on videos >120s, widen merge_gap for slow classes to 10%% of "
                          "duration (cap 60s) so a 2-minute event isn't fragmented -- "

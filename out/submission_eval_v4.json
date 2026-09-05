@@ -1,0 +1,515 @@
+{
+  "schema_version": "1.0",
+  "submission_id": "vad-cascade-v4-eval",
+  "model_name": "vad-cascade v4: SigLIP frame embeddings at 2 fps -> 8 s temporal transformer head (trained, 12-class multi-label) -> per-class hysteresis + duration priors; no VLM in this run",
+  "run_metadata": {
+    "total_wall_time_ms": 184677.0,
+    "max_parallel_videos": 1,
+    "hardware": "1x Apple M2 Max, 32 GB"
+  },
+  "predictions": [
+    {
+      "video_id": "E001",
+      "events": [],
+      "runtime_metadata": {
+        "frames_processed": 12,
+        "chunks_processed": 1,
+        "end_to_end_internal_time_ms": 510.9,
+        "model_runtimes": []
+      }
+    },
+    {
+      "video_id": "E002",
+      "events": [
+        {
+          "class_name": "traffic_accident",
+          "start_time_sec": null,
+          "end_time_sec": null
+        }
+      ],
+      "runtime_metadata": {
+        "frames_processed": 10,
+        "chunks_processed": 1,
+        "end_to_end_internal_time_ms": 195.4,
+        "model_runtimes": []
+      }
+    },
+    {
+      "video_id": "E003",
+      "events": [],
+      "runtime_metadata": {
+        "frames_processed": 37,
+        "chunks_processed": 7,
+        "end_to_end_internal_time_ms": 677.8,
+        "model_runtimes": []
+      }
+    },
+    {
+      "video_id": "E004",
+      "events": [
+        {
+          "class_name": "traffic_accident",
+          "start_time_sec": null,
+          "end_time_sec": null
+        }
+      ],
+      "runtime_metadata": {
+        "frames_processed": 12,
+        "chunks_processed": 1,
+        "end_to_end_internal_time_ms": 289.2,
+        "model_runtimes": []
+      }
+    },
+    {
+      "video_id": "E005",
+      "events": [
+        {
+          "class_name": "traffic_accident",
+          "start_time_sec": null,
+          "end_time_sec": null
+        }
+      ],
+      "runtime_metadata": {
+        "frames_processed": 15,
+        "chunks_processed": 1,
+        "end_to_end_internal_time_ms": 321.1,
+        "model_runtimes": []
+      }
+    },
+    {
+      "video_id": "E006",
+      "events": [
+        {
+          "class_name": "traffic_congestion",
+          "start_time_sec": null,
+          "end_time_sec": null
+        }
+      ],
+      "runtime_metadata": {
+        "frames_processed": 12,
+        "chunks_processed": 1,
+        "end_to_end_internal_time_ms": 295.4,
+        "model_runtimes": []
+      }
+    },
+    {
+      "video_id": "E007",
+      "events": [],
+      "runtime_metadata": {
+        "frames_processed": 31,
+        "chunks_processed": 5,
+        "end_to_end_internal_time_ms": 725.3,
+        "model_runtimes": []
+      }
+    },
+    {
+      "video_id": "E008",
+      "events": [],
+      "runtime_metadata": {
+        "frames_processed": 16,
+        "chunks_processed": 1,
+        "end_to_end_internal_time_ms": 338.6,
+        "model_runtimes": []
+      }
+    },
+    {
+      "video_id": "E009",
+      "events": [
+        {
+          "class_name": "fire",
+          "start_time_sec": null,
+          "end_time_sec": null
+        }
+      ],
+      "runtime_metadata": {
+        "frames_processed": 12,
+        "chunks_processed": 1,
+        "end_to_end_internal_time_ms": 279.5,
+        "model_runtimes": []
+      }
+    },
+    {
+      "video_id": "E010",
+      "events": [
+        {
+          "class_name": "smoke",
+          "start_time_sec": null,
+          "end_time_sec": null
+        }
+      ],
+      "runtime_metadata": {
+        "frames_processed": 12,
+        "chunks_processed": 1,
+        "end_to_end_internal_time_ms": 281.2,
+        "model_runtimes": []
+      }
+    },
+    {
+      "video_id": "E011",
+      "events": [
+        {
+          "class_name": "smoke",
+          "start_time_sec": null,
+          "end_time_sec": null
+        }
+      ],
+      "runtime_metadata": {
+        "frames_processed": 12,
+        "chunks_processed": 1,
+        "end_to_end_internal_time_ms": 280.1,
+        "model_runtimes": []
+      }
+    },
+    {
+      "video_id": "E012",
+      "events": [
+        {
+          "class_name": "waterlogging_or_flood",
+          "start_time_sec": null,
+          "end_time_sec": null
+        }
+      ],
+      "runtime_metadata": {
+        "frames_processed": 12,
+        "chunks_processed": 1,
+        "end_to_end_internal_time_ms": 294.6,
+        "model_runtimes": []
+      }
+    },
+    {
+      "video_id": "E013",
+      "events": [
+        {
+          "class_name": "waterlogging_or_flood",
+          "start_time_sec": null,
+          "end_time_sec": null
+        }
+      ],
+      "runtime_metadata": {
+        "frames_processed": 12,
+        "chunks_processed": 1,
+        "end_to_end_internal_time_ms": 293.0,
+        "model_runtimes": []
+      }
+    },
+    {
+      "video_id": "E014",
+      "events": [
+        {
+          "class_name": "smoke",
+          "start_time_sec": null,
+          "end_time_sec": null
+        }
+      ],
+      "runtime_metadata": {
+        "frames_processed": 19,
+        "chunks_processed": 2,
+        "end_to_end_internal_time_ms": 417.2,
+        "model_runtimes": []
+      }
+    },
+    {
+      "video_id": "E015",
+      "events": [
+        {
+          "class_name": "traffic_accident",
+          "start_time_sec": null,
+          "end_time_sec": null
+        }
+      ],
+      "runtime_metadata": {
+        "frames_processed": 25,
+        "chunks_processed": 4,
+        "end_to_end_internal_time_ms": 540.3,
+        "model_runtimes": []
+      }
+    },
+    {
+      "video_id": "E016",
+      "events": [
+        {
+          "class_name": "traffic_accident",
+          "start_time_sec": null,
+          "end_time_sec": null
+        }
+      ],
+      "runtime_metadata": {
+        "frames_processed": 33,
+        "chunks_processed": 6,
+        "end_to_end_internal_time_ms": 695.8,
+        "model_runtimes": []
+      }
+    },
+    {
+      "video_id": "E017",
+      "events": [
+        {
+          "class_name": "fighting_or_violence",
+          "start_time_sec": null,
+          "end_time_sec": null
+        }
+      ],
+      "runtime_metadata": {
+        "frames_processed": 60,
+        "chunks_processed": 12,
+        "end_to_end_internal_time_ms": 983.5,
+        "model_runtimes": []
+      }
+    },
+    {
+      "video_id": "E018",
+      "events": [
+        {
+          "class_name": "fighting_or_violence",
+          "start_time_sec": null,
+          "end_time_sec": null
+        }
+      ],
+      "runtime_metadata": {
+        "frames_processed": 60,
+        "chunks_processed": 12,
+        "end_to_end_internal_time_ms": 954.4,
+        "model_runtimes": []
+      }
+    },
+    {
+      "video_id": "E019",
+      "events": [
+        {
+          "class_name": "loitering_or_suspicious_presence",
+          "start_time_sec": null,
+          "end_time_sec": null
+        }
+      ],
+      "runtime_metadata": {
+        "frames_processed": 38,
+        "chunks_processed": 7,
+        "end_to_end_internal_time_ms": 678.0,
+        "model_runtimes": []
+      }
+    },
+    {
+      "video_id": "E020",
+      "events": [
+        {
+          "class_name": "loitering_or_suspicious_presence",
+          "start_time_sec": null,
+          "end_time_sec": null
+        }
+      ],
+      "runtime_metadata": {
+        "frames_processed": 38,
+        "chunks_processed": 7,
+        "end_to_end_internal_time_ms": 613.6,
+        "model_runtimes": []
+      }
+    },
+    {
+      "video_id": "E021",
+      "events": [
+        {
+          "class_name": "vehicle_blocking_traffic",
+          "start_time_sec": 21.12,
+          "end_time_sec": 39.84
+        },
+        {
+          "class_name": "vehicle_blocking_traffic",
+          "start_time_sec": 61.44,
+          "end_time_sec": 78.24
+        },
+        {
+          "class_name": "vehicle_blocking_traffic",
+          "start_time_sec": 101.76,
+          "end_time_sec": 118.56
+        },
+        {
+          "class_name": "vehicle_blocking_traffic",
+          "start_time_sec": 140.16,
+          "end_time_sec": 158.88
+        },
+        {
+          "class_name": "vehicle_blocking_traffic",
+          "start_time_sec": 180.48,
+          "end_time_sec": 199.2
+        },
+        {
+          "class_name": "vehicle_blocking_traffic",
+          "start_time_sec": 220.8,
+          "end_time_sec": 239.52
+        }
+      ],
+      "runtime_metadata": {
+        "frames_processed": 500,
+        "chunks_processed": 122,
+        "end_to_end_internal_time_ms": 14270.0,
+        "model_runtimes": []
+      }
+    },
+    {
+      "video_id": "E022",
+      "events": [
+        {
+          "class_name": "traffic_accident",
+          "start_time_sec": 90.24,
+          "end_time_sec": 107.04
+        },
+        {
+          "class_name": "traffic_accident",
+          "start_time_sec": 130.56,
+          "end_time_sec": 174.24
+        },
+        {
+          "class_name": "fighting_or_violence",
+          "start_time_sec": 130.56,
+          "end_time_sec": 174.24
+        },
+        {
+          "class_name": "smoke",
+          "start_time_sec": 188.16,
+          "end_time_sec": 239.52
+        },
+        {
+          "class_name": "fighting_or_violence",
+          "start_time_sec": 188.16,
+          "end_time_sec": 239.52
+        },
+        {
+          "class_name": "traffic_accident",
+          "start_time_sec": 205.44,
+          "end_time_sec": 228.0
+        },
+        {
+          "class_name": "fire",
+          "start_time_sec": 222.72,
+          "end_time_sec": 239.52
+        }
+      ],
+      "runtime_metadata": {
+        "frames_processed": 500,
+        "chunks_processed": 122,
+        "end_to_end_internal_time_ms": 18324.4,
+        "model_runtimes": []
+      }
+    },
+    {
+      "video_id": "E023",
+      "events": [
+        {
+          "class_name": "traffic_congestion",
+          "start_time_sec": 0.0,
+          "end_time_sec": 239.52
+        }
+      ],
+      "runtime_metadata": {
+        "frames_processed": 500,
+        "chunks_processed": 122,
+        "end_to_end_internal_time_ms": 17905.0,
+        "model_runtimes": []
+      }
+    },
+    {
+      "video_id": "E024",
+      "events": [],
+      "runtime_metadata": {
+        "frames_processed": 480,
+        "chunks_processed": 117,
+        "end_to_end_internal_time_ms": 39337.4,
+        "model_runtimes": []
+      }
+    },
+    {
+      "video_id": "E025",
+      "events": [
+        {
+          "class_name": "traffic_accident",
+          "start_time_sec": 0.0,
+          "end_time_sec": 359.5
+        },
+        {
+          "class_name": "stalled_or_broken_down_vehicle",
+          "start_time_sec": 56.0,
+          "end_time_sec": 85.5
+        },
+        {
+          "class_name": "stalled_or_broken_down_vehicle",
+          "start_time_sec": 278.0,
+          "end_time_sec": 297.5
+        }
+      ],
+      "runtime_metadata": {
+        "frames_processed": 720,
+        "chunks_processed": 177,
+        "end_to_end_internal_time_ms": 19279.5,
+        "model_runtimes": []
+      }
+    },
+    {
+      "video_id": "E026",
+      "events": [
+        {
+          "class_name": "loitering_or_suspicious_presence",
+          "start_time_sec": 0.0,
+          "end_time_sec": 326.4
+        }
+      ],
+      "runtime_metadata": {
+        "frames_processed": 613,
+        "chunks_processed": 151,
+        "end_to_end_internal_time_ms": 12766.5,
+        "model_runtimes": []
+      }
+    },
+    {
+      "video_id": "E027",
+      "events": [
+        {
+          "class_name": "traffic_accident",
+          "start_time_sec": 0.0,
+          "end_time_sec": 602.1
+        },
+        {
+          "class_name": "waterlogging_or_flood",
+          "start_time_sec": 578.58,
+          "end_time_sec": 594.09
+        }
+      ],
+      "runtime_metadata": {
+        "frames_processed": 1204,
+        "chunks_processed": 298,
+        "end_to_end_internal_time_ms": 41077.7,
+        "model_runtimes": []
+      }
+    },
+    {
+      "video_id": "E028",
+      "events": [
+        {
+          "class_name": "loitering_or_suspicious_presence",
+          "start_time_sec": 0.0,
+          "end_time_sec": 352.53
+        },
+        {
+          "class_name": "traffic_congestion",
+          "start_time_sec": 138.67,
+          "end_time_sec": 161.6
+        },
+        {
+          "class_name": "waterlogging_or_flood",
+          "start_time_sec": 147.2,
+          "end_time_sec": 170.13
+        },
+        {
+          "class_name": "fire",
+          "start_time_sec": 160.0,
+          "end_time_sec": 168.0
+        }
+      ],
+      "runtime_metadata": {
+        "frames_processed": 662,
+        "chunks_processed": 163,
+        "end_to_end_internal_time_ms": 12051.6,
+        "model_runtimes": []
+      }
+    }
+  ]
+}

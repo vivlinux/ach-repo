@@ -175,12 +175,22 @@ def load(path: Path, device: str = "cpu"):
 
 
 @torch.no_grad()
-def predict(model, x: np.ndarray, device: str = "cpu") -> np.ndarray:
-    """[W,WIN,D] -> per-window sigmoid scores [W,C]."""
+def predict_logits(model, x: np.ndarray, device: str = "cpu") -> np.ndarray:
+    """[W,WIN,D] -> per-window pre-sigmoid logits [W,C]. Kept separate from
+    `predict` because on long single-scene test videos the sigmoid pins at
+    1.000 for the whole video (T027: congestion logits 20-24 on all 122
+    windows) while the logits still rank event windows above non-event ones
+    (AUC 0.92) -- postprocess.video_normalise needs the un-squashed values."""
     if len(x) == 0:
         return np.zeros((0, len(LABELS)), np.float32)
     out = []
     for i in range(0, len(x), 64):
         t = torch.from_numpy(x[i:i + 64]).to(device)
-        out.append(torch.sigmoid(model(t)).cpu().numpy())
+        out.append(model(t).float().cpu().numpy())
     return np.concatenate(out, 0)
+
+
+def predict(model, x: np.ndarray, device: str = "cpu") -> np.ndarray:
+    """[W,WIN,D] -> per-window sigmoid scores [W,C]."""
+    lg = predict_logits(model, x, device)
+    return (1.0 / (1.0 + np.exp(-lg))).astype(np.float32)
