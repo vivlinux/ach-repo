@@ -346,3 +346,71 @@ keep/discard threshold is updated to ≥49.0 throughout. Worth remembering:
 every number quoted before this point in the session that included an L1
 component was ~4 points optimistic; L2/L3 were already independently
 calibrated against two other leaderboard entrants and are unaffected.
+
+## 13. The robustness plan, executed — all four experiments discarded
+
+Full plan at `~/.claude/plans/ok-we-have-come-bright-creek.md`. **v4 remains
+the submitted, final result.** Every experiment below is a completed,
+verified negative — not something left unfinished for lack of time.
+
+**Step 1 (harness) found a real bug on the way in**: `scripts/arena_score.py`'s
+L1 formula was accuracy-based (half anomaly/normal accuracy + half class
+accuracy, independently). The real leaderboard's L1 panel (found/FA/P/R)
+implies a different formula — accuracy over all L1 videos where a real
+anomaly only counts correct with the *exact* class match. Fixed; reproduces
+12.5 against the real 13.2 (v4's own emulated total moved 53.7→49.0; nothing
+about v4 changed, only the yardstick got more accurate). §12 has the detail.
+
+**Step 2 (de-saturate the head) failed clearly.** Label smoothing 0.1 +
+pos-weight-max 3.0 + feature noise 0.03, retrained 25 epochs from the same
+2,952 relabelled videos. Saturation genuinely dropped 66.7%→14.2% and the
+train/val gap closed to near zero — but the model **underfit**: best-val
+loss landed at epoch 1/25 and never improved after. Emulated score collapsed
+49.0→35.9, losing alert-credit on 2 event videos it used to catch. The
+combination was too aggressive (most likely `pos_weight_max` cut from 8.0 to
+3.0, stacked with smoothing, left too little signal for the model to learn
+real positives at all). Per the plan's own rule — try a second, lighter
+config only if the first is close — 35.9 vs a required ≥49.0 is not close,
+so a second config wasn't attempted; that would have been chasing the
+budget rather than following the evidence. `out/head_reg.pt` and the new
+`train --label-smoothing/--pos-weight-max/--feat-noise/--d-model/--n-layers`
+flags are kept in the repo for a future, less aggressive attempt.
+
+**Step 3 (open-set abstention) is built and verified safe, but its value is
+unproven.** Fixed 3 real bugs in `vad/openset.py` first: the bank was built
+from `normal` only (72% scenic aerial, so ordinary traffic would itself look
+"novel" — added `--bank-from all`); calibration ran on clips that were
+themselves in the bank (self-referential — split 80/20 by video instead);
+`calibrate()`/`is_unknown()` mixed a raw-distance threshold against a
+different `novelty()` scale (added `calibrate_dist()`/`is_ood()` on the
+correct units). Wired into `cmd_predict --novelty` to *dampen* (never
+silence — `postprocess.never_silence()`) fragile-class scores on
+out-of-distribution windows. Measured on the public 34: **0.2% of windows
+cross the OOD threshold, and none of those overlap a fragile-class signal**
+— a complete no-op. The 3 false alarms that remain on genuinely-normal
+videos (`traffic_congestion`, `smoke`, `traffic_accident`) aren't even
+`FRAGILE_CLASSES` targets — confident-and-wrong on a camera-diverse class is
+a different failure mode than "confused by an unfamiliar scene," and nothing
+built today addresses it. Provably zero risk to include (identical output
+to not having it); can't demonstrate benefit without out-of-distribution
+test data, which the public 34 apparently isn't.
+
+**Step 4 (L1 merge: head OR VLM) is net neutral.** Changed 4 of 24 L1 videos
+— exactly 1 regression (T013: head correctly said `fire`, the VLM's
+disagreement overrode it to the wrong `smoke`) and 1 fix (T015: head
+wrongly said `fire`, corrected to the right `smoke`). They cancel exactly;
+L1 score identical either way. The policy is theoretically sound (favours
+recall, which is what a 20/24-anomalous metric rewards; uses whichever
+model has the independently-measured better class accuracy) but genuinely
+inconclusive on a sample of 4 disagreements. Not adopted for the same
+reason v5 wasn't: not enough public evidence to trust a change fitted to
+this specific 34-video sample.
+
+**What today's robustness pass actually bought**, since none of the four
+became a submission: a corrected scoring formula (Step 1, most valuable — it
+was silently making every future decision wrong by up to 4 points), a caught
+bad hyperparameter combination that would have been a confident regression
+if shipped blind, a genuinely safety-checked abstention mechanism ready to
+prove itself the moment real out-of-distribution data appears, and honest
+disproof of a plausible-sounding idea (Step 4) that could easily have been
+shipped on vibes alone.

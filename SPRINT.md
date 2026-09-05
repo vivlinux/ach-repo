@@ -44,41 +44,64 @@ Legend: `[x]` done · `[~]` in progress · `[ ]` not started
       results (bigger model tied, gate hurt, prompt hypothesis backwards
       twice, cropping v5 rejected).
 
-## Now — executing the approved plan (uploads due 16:30)
+## Robustness plan — executed, all four experiments discarded (15:11)
 
-- [ ] **Step 0 (10 min, deliverable)**: `.gitignore`, first commit, push to
-      `vivlinux/ach-repo`, confirm URL loads. Record v4's baseline in
-      PROGRESS.md.
-- [ ] **Step 1 (15 min)**: `scripts/head_report.py` — one command reporting
-      emulated score, saturation, per-class fire rate on the 6 normal
-      videos, train/val gap. The keep/discard oracle for every step after.
-- [ ] **Step 2 (30 min)**: de-saturate the head — label smoothing 0.1,
-      pos-weight-max 3 (loitering's likely cause), feature noise 0.03.
-      New checkpoint `out/head_reg.pt`, `out/head.pt` (v4) untouched.
-      Risk: medium — may un-suppress the fragile classes, which Step 3
-      exists to handle.
-- [ ] **Step 3 (35 min)**: wire `NoveltyBank` (`vad/openset.py`) into
-      `predict` as an abstention signal — dampens fragile-class scores on
-      out-of-distribution windows, never silences a video that had
-      real intervals (the alert-credit lesson from v6, made permanent as
-      `postprocess.never_silence()`). Fixes 3 bugs found in the module
-      first (self-referential calibration, distance/novelty unit mismatch).
-- [ ] **Step 4 (10 min)**: merge L1 answers — union of head+VLM for
-      anomaly/normal (recall favoured, since 20/24 L1 videos are
-      anomalous), VLM's class on disagreement (better class accuracy).
-      Rejected "agree-only": correct for a false-alert-budget objective,
-      wrong for this scoring metric.
-- [ ] **Final (by 16:30)**: `submit --honest-timing`, validate, upload
-      **only if** the decision rule holds (≥53.1 + better generalisation
-      profile). Otherwise v4 stands as final.
+Full plan: `/Users/vivekkumarsingh/.claude/plans/ok-we-have-come-bright-creek.md`.
+**v4 (`out/head.pt`, no VLM) remains the submitted, final result — 53.1
+real / 49.0 emulated under the corrected formula.** Nothing built after it
+beat it; every step below is a genuine, verified negative, not an
+unfinished attempt.
 
-## Decision rule (same for every step above)
+- [x] **Step 0** — repo pushed: https://github.com/vivlinux/ach-repo.
+- [x] **Step 1** — `scripts/head_report.py` built and validated: reproduces
+      v4 exactly (49.0, 66.7% saturation, self-suppressed classes at their
+      known values). This also **found and fixed a real bug**: the L1
+      scoring formula in `scripts/arena_score.py` was accuracy-based, not
+      precision/recall as the real arena panel showed. Corrected; v4's own
+      emulated score moved 53.7→49.0 as a result (nothing about v4 changed,
+      only the yardstick).
+- [x] **Step 2, discarded**: de-saturated head (label smoothing 0.1,
+      pos-weight-max 3, feat noise 0.03) collapsed the score **49.0→35.9**
+      and lost alert-credit on 2 event videos. Saturation genuinely dropped
+      66.7%→14.2% and the train/val gap closed to ~0 — but the model
+      underfit rather than generalised; best-val landed at epoch 1/25.
+      Per the plan's own rule ("run a second config only if the first is
+      close"), 35.9 vs a required ≥49.0 is not close — stopped iterating
+      rather than spend the budget chasing it. Code/CLI flags kept for
+      future use; `out/head_reg.pt` not adopted.
+- [x] **Step 3, built and safe, but unproven**: `NoveltyBank` wired as an
+      out-of-distribution dampener on the 5 `FRAGILE_CLASSES`, after fixing
+      3 real bugs in `vad/openset.py` (self-referential calibration, a
+      distance/novelty unit mismatch, a normal-only bank that would call
+      ordinary traffic "novel"). Measured **zero effect** on the public 34:
+      only 0.2% of test windows cross the OOD threshold, and none of those
+      overlap a fragile-class signal. The 3 false alarms that do remain on
+      normal videos (`traffic_congestion`, `smoke`, `traffic_accident` on
+      T003/T004) aren't even fragile-class targets — a different failure
+      mode (confident-and-wrong on a camera-diverse class, not "confused by
+      an unfamiliar scene"). Provably doesn't hurt v4; can't demonstrate it
+      helps without OOD test data we don't have. Off by default in the
+      submitted file.
+- [x] **Step 4, net neutral**: `scripts/merge_l1.py` (head OR VLM for
+      anomaly/normal, VLM's class on disagreement) changed exactly 4 of 24
+      L1 videos — 1 regression (T013: head correctly said `fire`, merge
+      overrode it to `smoke`, now wrong), 1 fix (T015: head wrongly said
+      `fire`, merge corrected it to `smoke`). They cancel exactly; L1 score
+      identical (12.5) either way. Genuinely inconclusive on n=4; not
+      adopted.
 
-Keep a change only if: emulator total ≥ 53.1 (±1.5 is one video, treat as
-noise) **and** the generalisation profile improves (saturation ↓, normal-
-video fire rate ↓, train/val gap ↓, no event-video loses its last interval).
-A result in the 52–53.1 band with a clearly better profile is a judgment
-call for the user, never auto-uploaded.
+**Net result of the whole robustness pass**: no submission change. The
+value was in what got *verified* — a real scoring-formula bug fixed, a
+bad hyperparameter combination caught before shipping it, an abstention
+mechanism proven safe (if not yet proven useful), and a plausible-sounding
+L1 policy shown to be a wash rather than assumed to help.
+
+## Decision rule that governed all four (for the record)
+
+Keep a change only if: emulator total ≥ 49.0 (the corrected baseline; ±1.5
+is one video, treat as noise) **and** the generalisation profile improves
+(saturation ↓, normal-video fire rate ↓, train/val gap ↓, no event-video
+loses its last interval). None of the four met both.
 
 ---
 
