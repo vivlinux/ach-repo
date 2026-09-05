@@ -414,3 +414,99 @@ if shipped blind, a genuinely safety-checked abstention mechanism ready to
 prove itself the moment real out-of-distribution data appears, and honest
 disproof of a plausible-sounding idea (Step 4) that could easily have been
 shipped on vibes alone.
+
+## 14. Handoff — what to do next, and what's ruled out (2026-09-05, 15:17)
+
+Written so a fresh conversation can pick this up cold. Current state: **v4
+(`out/head.pt`) is submitted and final, 53.1/100, rank 5/9.** Repo pushed to
+https://github.com/vivlinux/ach-repo (main, latest commit has everything
+through §13). Deck published at
+https://claude.ai/code/artifact/acc697a2-08de-4f8b-951f-41499f601615.
+
+### What to do next, roughly in order of expected value
+
+1. **Object detection + tracking for per-object trajectory.** The single
+   biggest untried lever. `wrong_way_driving` and `vehicle_blocking_traffic`
+   are fundamentally "does *this specific vehicle's* heading/position differ
+   from the others" — a per-object question. Every representation used
+   today (whole-frame SigLIP embeddings, mean/max-pooled over a window) is
+   structurally blind to that; it's almost certainly why those two classes
+   produced the worst false-alarm rates all day and why the trained head
+   just learned to suppress them rather than solve them. A cheap detector
+   (YOLO-nano class) + simple tracker (ByteTrack/SORT) giving per-vehicle
+   heading over time would be new engineering, not a tuning pass — plan for
+   real build time, not an hour.
+2. **A lighter Step 2 retrain, single lever only.** The de-saturation
+   attempt (§13) combined three changes and failed hard (49.0→35.9,
+   underfit). Never isolated which one did the damage. Best guess is
+   `pos_weight_max` cut from 8.0→3.0 (too little positive-class signal left
+   to learn from) stacked with label smoothing. Worth trying
+   `--label-smoothing 0.05` **alone**, `pos_weight_max` left at its default
+   8.0, no feature noise — a genuinely different, untested point, not a
+   repeat of the failed one. Use `scripts/head_report.py` as the oracle
+   immediately; if best-val still lands at epoch 1, abandon quickly rather
+   than waiting out all 25 epochs (that's what cost the time on the first
+   attempt — the checkpoint only saves at the very end, so there's no way
+   to bail early without losing the run entirely; consider adding
+   epoch-by-epoch checkpointing if this becomes a repeated pattern).
+3. **`loitering_or_suspicious_presence` is still missing its other zip
+   part** (`-1-001.zip`, holds the CSVs + ~half the clips) — never
+   re-downloaded after being flagged mid-morning. Getting it would give the
+   only class with zero timestamped supervision today (79 videos, all
+   weakly-labelled MIL) some real per-window ground truth, which is a
+   plausible second cause (after `pos_weight_max`) of that class's
+   saturation at 1.000 on >10% of every test window.
+4. **`fighting_or_violence` was only 63% keyword-matched** in the original
+   relabelling audit and never fully spot-checked by hand the way the other
+   noisy classes were (§3). Worth a manual pass on the ~37% that didn't
+   match, the same way the negation bug and the 2 explosion rows were
+   caught in the classes that *were* checked.
+5. **`--zeroshot-classes` blending, not overwriting.** Currently a column
+   *overwrite* (`vad/cli.py` ~line 176) of the head's sigmoid with
+   zero-shot's differently-scaled softmax — flagged as high-risk-if-blind
+   back in the original plan and never touched. `np.maximum(head, zeroshot)`
+   would let the camera-agnostic zero-shot prior add recall on the
+   single-camera/no-data classes without ever suppressing the head's own
+   signal. Cheap to try, never attempted.
+6. **Confirm the arena submission form is actually complete** — repo URL,
+   architecture write-up link, and the 2-slide PPT upload, at the bottom of
+   the Benchmark tab. Everything on our side is *built and pushed*; whether
+   it's been *entered into the arena's form* is a separate, unverified step.
+
+### What's ruled out, and why (don't re-litigate these without new information)
+
+- **Holmes-VAD / Vad-R1** (the pretrained VAD/VAR checkpoints considered
+  mid-session) — no confirmed Apple Silicon / MLX path; both are CUDA-era
+  research repos likely depending on flash-attention and multi-GPU training
+  scripts. Investigated via web search, not assumed. Revisit only if
+  someone confirms a working MPS port.
+- **A true LLM agentic tool-loop** (the VLM deciding what to look at next,
+  rather than a scripted policy) — explicitly considered and declined by
+  the user's own framing of "agentic" as scripted escalation. Nothing
+  measured today suggests an LLM-driven loop would fix a problem that a
+  scripted policy couldn't; the actual bottleneck (per-object trajectory,
+  item 1 above) isn't a reasoning-loop problem, it's a representation
+  problem.
+- **Camera-grouped cross-validation on train** — no source/camera id exists
+  anywhere in the data (checked directly: `vad/io.py`/`vad/head.py` carry no
+  such field). A folder-based or id-block heuristic grouping was considered
+  and rejected as too close to "folder ≈ class," which would hold out a
+  class rather than a camera.
+- **Fine-tuning the VLM itself** (LoRA on Qwen3-VL) — declined for time,
+  not for merit. If a future session has substantially more time, this is
+  the one item on this "ruled out" list that's a genuine reconsideration
+  candidate rather than a dead end, since Qwen3-VL is already the live
+  runtime and `mlx-vlm` supports LoRA.
+- **Ollama / Gemma-3-27B as an escalation tier** — removed entirely at the
+  user's explicit request; the stack is Qwen3-VL only now. Don't
+  reintroduce without being asked.
+- **The arena's real `manifest.json`** — never obtained; all scoring here
+  uses this dataset's own `test/ground_truth.csv` as the stand-in, which
+  the arena confirmed *is* what it scores against (the T-video ids match),
+  so this is now believed resolved rather than an open gap — but the
+  emulator's L1 formula still has an unexplained ~0.7-point residual
+  (§12) that a real manifest might close if one ever surfaces.
+- **`road_spill_or_debris`** has zero genuine training examples after
+  relabelling (§3, §12) — not fixable by any modelling choice, only by
+  sourcing new labelled data for that class specifically, which is outside
+  today's scope entirely.
