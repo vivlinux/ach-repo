@@ -116,9 +116,13 @@ def cmd_train(a):
     strong = sum(1 for s in samples if s["y"] is not None)
     print(f"{len(samples)} videos usable ({strong} strong, {len(samples)-strong} MIL), dim={dim}")
     dev = pick_device() if a.device == "auto" else a.device
-    model = H.train_head(samples, dim, epochs=a.epochs, lr=a.lr, device=dev)
-    ck = OUT / "head.pt"
-    H.save(model, dim, ck, meta=dict(encoder=emb.model_id, fps=a.fps, win=WIN, stride=STRIDE))
+    model = H.train_head(samples, dim, epochs=a.epochs, lr=a.lr, device=dev,
+                         d_model=a.d_model, n_layers=a.n_layers, dropout=a.dropout,
+                         weight_decay=a.weight_decay, label_smoothing=a.label_smoothing,
+                         feat_noise=a.feat_noise, pos_weight_max=a.pos_weight_max)
+    ck = Path(a.out) if a.out else OUT / "head.pt"
+    H.save(model, dim, ck, meta=dict(encoder=emb.model_id, fps=a.fps, win=WIN, stride=STRIDE),
+          d_model=a.d_model, n_layers=a.n_layers, dropout=a.dropout)
     print(f"saved {ck}")
 
 
@@ -434,6 +438,24 @@ def main():
                     help="max non-traffic aerial 'normal' videos to train on (-1 = all). "
                          "Train-normal is 72%% scenic aerial; uncapped, the head learns "
                          "'no road = normal'. Traffic normals are never dropped.")
+    sp.add_argument("--out", default=None, help="checkpoint path (default out/head.pt). "
+                    "Use a different path for an experimental retrain so it never "
+                    "overwrites a checkpoint that's already been submitted.")
+    sp.add_argument("--d-model", dest="d_model", type=int, default=256)
+    sp.add_argument("--n-layers", dest="n_layers", type=int, default=2)
+    sp.add_argument("--dropout", type=float, default=0.15)
+    sp.add_argument("--weight-decay", dest="weight_decay", type=float, default=0.02)
+    sp.add_argument("--label-smoothing", dest="label_smoothing", type=float, default=0.0,
+                    help="pulls 0/1 targets to e/2 - (1-e/2). Added to fight output "
+                         "saturation found in the first head (loitering at 1.000 on "
+                         ">10%% of ALL test windows).")
+    sp.add_argument("--feat-noise", dest="feat_noise", type=float, default=0.0,
+                    help="Gaussian noise on embeddings, train only -- a cheap stand-in "
+                         "for unseen-camera augmentation since no source id exists.")
+    sp.add_argument("--pos-weight-max", dest="pos_weight_max", type=float, default=8.0,
+                    help="clip on the positive-class weight (was hardcoded at 8.0). "
+                         "loitering is 79 videos, all weakly-labelled MIL with no "
+                         "timestamps -- a high weight likely drove its over-firing.")
     sp.set_defaults(fn=cmd_train)
 
     sp = sub.add_parser("predict")
