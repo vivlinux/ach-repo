@@ -278,3 +278,46 @@ credit, but it's the honest state of L3.
 - The HF CDN stalled at ~380 KB/s midday (one download froze at 63 MB) but
   measured **8.6 MB/s** later — the stall was transient, not a hard limit.
   Pulling Qwen3-VL-8B to test on L1, where model judgment is the bottleneck.
+
+## 11. Real arena result, and the plan for the rest of the window
+
+**v4 (trained head, no VLM) scored 53.1/100, rank 5/9** on the real
+leaderboard (L1 13.2/25, L2 22.6/35, L3 17.3/40). `scripts/arena_score.py`
+reproduces this to within 0.6 once L1 was corrected to precision/recall
+rather than the accuracy split it originally assumed — it had been 14 points
+off on an earlier silent-L2 submission because it modelled the "stay silent"
+payoff wrong; it's accurate in the predict-everything regime we're now in.
+
+**v5 (crop false-alarm classes by name) and v6/full-gate (VLM filters the
+head's output) were both tried and rejected.** v5 is a rule derived from
+*this leaderboard's* per-class report — exactly the kind of thing that
+breaks on hidden data if it has real fighting/loitering events. The full
+gate silenced 15 of 34 videos; under the arena's rules a video with real
+events that gets zero predictions scores 0 for that video ("alert credit"),
+which is why gating cost 9 points (53.7 emulated -> 44.9) despite removing
+78% of false alarms. A "gate but restore one interval per silenced video"
+variant recovered to 51.2 — still below not gating at all.
+
+**Repo pushed**: https://github.com/vivlinux/ach-repo (commit `0e15cd5`).
+
+**Now executing a plan focused on hidden-set robustness**, not further
+public-leaderboard tuning — full plan at
+`/Users/vivekkumarsingh/.claude/plans/ok-we-have-come-bright-creek.md`.
+The core finding motivating it: the head's outputs are **saturated at 0/1**
+(`loitering` fires at 1.000 on >10% of ALL test windows), so per-class
+thresholds have nothing to grip, and its validation split is a random
+per-video shuffle that shares cameras with training — val loss says nothing
+about unseen cameras. Plan: (1) a `head_report.py` harness that measures
+saturation and per-class fire-rate-on-normal-videos alongside the arena
+score, so every change is judged on generalisation, not just score; (2)
+de-saturate the head (label smoothing, lower pos-weight-max, feature noise)
+without overwriting `out/head.pt`; (3) wire the existing but unused
+`NoveltyBank` (`vad/openset.py`) as an abstention signal that *dampens*
+fragile-class scores on out-of-distribution windows rather than silencing
+videos, after fixing three real bugs found in it (self-referential
+calibration threshold, a distance/novelty unit mismatch, and a normal-only
+bank that would call ordinary traffic "novel"); (4) merge L1's binary
+answer as head-OR-VLM (favouring recall, since 20 of 24 L1 videos are
+truly anomalous). v4 stays the submitted result unless a new file beats it
+on both the public score and this generalisation profile — decided by a
+rule declared before any of it was built, not after seeing a number.
