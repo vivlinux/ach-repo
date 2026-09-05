@@ -85,11 +85,24 @@ def load_pred(path):
 
 
 def score(lvl, gt_ev, gt_cls, p_l1, p_iv, emit=lambda v, L: True, weights=None):
+    """L1 formula corrected 2026-09-05 after the real leaderboard exposed a
+    P/R/found/FA panel. found/FA/P/R reproduce EXACTLY against the arena
+    (found 10/20, FA 11, P 48%, R 50% on the submitted v4 file) once counted
+    as: found = real-anomaly videos with the exact right class; FA = any
+    wrongly-predicted-anomaly video (wrong class on a real anomaly, or any
+    anomaly guess on a real normal). The marks themselves are simple
+    accuracy over all L1 videos -- (found + true-negatives)/N -- which gives
+    12.5 against the real 13.2; the ~0.7 residual is most likely the
+    manifest/level split, since we've only ever had this dataset's own
+    ground_truth.csv as a stand-in for the arena's real manifest.json, never
+    the manifest itself. The old formula here (kept in git history) gave
+    17.2 -- 4 points too optimistic -- because it rewarded getting
+    anomaly-vs-normal right independently of getting the class right."""
     weights = weights or ALERT_W
     L1 = [v for v in lvl if lvl[v] == 1]
-    b = sum((gt_cls[v] != NORMAL) == (p_l1.get(v, NORMAL) != NORMAL) for v in L1)
-    c = sum(p_l1.get(v, NORMAL) == gt_cls[v] for v in L1)
-    out = {1: CAPS[1] * (0.5 * b / max(1, len(L1)) + 0.5 * c / max(1, len(L1)))}
+    found = sum(1 for v in L1 if gt_cls[v] != NORMAL and p_l1.get(v, NORMAL) == gt_cls[v])
+    tn = sum(1 for v in L1 if gt_cls[v] == NORMAL and p_l1.get(v, NORMAL) == NORMAL)
+    out = {1: CAPS[1] * (found + tn) / max(1, len(L1))}
     for L in (2, 3):
         vids = [v for v in lvl if lvl[v] == L]
         if not vids:

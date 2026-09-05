@@ -321,3 +321,28 @@ answer as head-OR-VLM (favouring recall, since 20 of 24 L1 videos are
 truly anomalous). v4 stays the submitted result unless a new file beats it
 on both the public score and this generalisation profile — decided by a
 rule declared before any of it was built, not after seeing a number.
+
+## 12. Emulator recalibration — the L1 formula was wrong, not the arena
+
+While building `scripts/head_report.py` (Step 1 of the robustness plan), I
+checked `arena_score.py`'s L1 formula against v4's real per-video predictions
+before trusting it as an oracle for the next several hours of decisions.
+Found: `found`/`FA`/`P`/`R` reproduced the leaderboard's panel **exactly**
+(10/20, 11, 48%, 50%), but the `marks` formula (accuracy-vs-normal + class
+accuracy, independently weighted) gave 17.2 against a real 13.2 — 4 points
+too optimistic, because it rewarded getting anomaly-vs-normal right even
+when the class was wrong.
+
+Replaced it with the formula the real panel implies: L1 marks = accuracy
+over all L1 videos, where a real anomaly only counts correct if the *exact
+class* matches, and a real normal counts correct only if predicted normal.
+This reproduces 12.5 against the real 13.2 (a ~0.7-point residual, most
+likely because we've only ever had this dataset's own `ground_truth.csv` as
+a stand-in for the arena's actual `manifest.json`, never the real one).
+
+**Consequence: v4's own emulated total moves from 53.7 to 49.0** — nothing
+about v4 changed, only the yardstick got more accurate. The plan's
+keep/discard threshold is updated to ≥49.0 throughout. Worth remembering:
+every number quoted before this point in the session that included an L1
+component was ~4 points optimistic; L2/L3 were already independently
+calibrated against two other leaderboard entrants and are unaffected.
