@@ -1,0 +1,314 @@
+<title>Anomaly Cascade on M2</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+<style>
+  :root{
+    --ground:#F1F3F2; --surface:#FBFCFB; --sunk:#E7EAE9;
+    --ink:#17211F; --ink-soft:#5A6866; --rule:#CFD6D4;
+    --signal:#C06A16; --signal-wash:#F6E9DA;
+    --verify:#2F6B62; --verify-wash:#E2EDEB;
+    --alarm:#A8382A; --alarm-wash:#F6E3E0;
+    --display:"Archivo",system-ui,sans-serif;
+    --body:"Source Serif 4",Georgia,serif;
+    --mono:"IBM Plex Mono",ui-monospace,monospace;
+  }
+  @media (prefers-color-scheme:dark){
+    :root:not([data-theme="light"]){
+      --ground:#131817; --surface:#1B2221; --sunk:#232B29;
+      --ink:#E8EDEB; --ink-soft:#9AA8A5; --rule:#33403D;
+      --signal:#E4954A; --signal-wash:#3A2B18;
+      --verify:#6FB3A7; --verify-wash:#1B2E2B;
+      --alarm:#D9705E; --alarm-wash:#33201D;
+    }
+  }
+  :root[data-theme="dark"]{
+    --ground:#131817; --surface:#1B2221; --sunk:#232B29;
+    --ink:#E8EDEB; --ink-soft:#9AA8A5; --rule:#33403D;
+    --signal:#E4954A; --signal-wash:#3A2B18;
+    --verify:#6FB3A7; --verify-wash:#1B2E2B;
+    --alarm:#D9705E; --alarm-wash:#33201D;
+  }
+  *{box-sizing:border-box}
+  body{background:var(--ground);color:var(--ink);font-family:var(--body);
+       line-height:1.55;-webkit-font-smoothing:antialiased}
+  .deck{max-width:1180px;margin:0 auto;padding:28px 22px 56px;display:flex;flex-direction:column;gap:26px}
+  .plate{background:var(--surface);border:1px solid var(--rule);border-radius:3px;
+         padding:30px 34px 34px;position:relative}
+  .plate-tag{position:absolute;top:0;right:0;font-family:var(--mono);font-size:10px;
+             letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);
+             background:var(--sunk);border-left:1px solid var(--rule);border-bottom:1px solid var(--rule);
+             padding:6px 12px}
+  .eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;
+           color:var(--signal);margin:0 0 8px}
+  h1{font-family:var(--display);font-weight:700;font-size:clamp(28px,4vw,42px);line-height:1.05;
+     letter-spacing:-.02em;margin:0 0 6px;text-wrap:balance}
+  h2{font-family:var(--display);font-weight:600;font-size:15px;letter-spacing:.04em;
+     text-transform:uppercase;margin:30px 0 12px;color:var(--ink)}
+  .lede{font-size:17px;color:var(--ink-soft);margin:0 0 4px;max-width:66ch}
+  .lede strong{color:var(--ink);font-weight:600}
+  figure{margin:22px 0 0}
+  .diagram-wrap{overflow-x:auto;background:var(--sunk);border:1px solid var(--rule);
+                border-radius:2px;padding:18px 16px}
+  svg{display:block;min-width:860px;width:100%;height:auto}
+  .s-box{fill:var(--surface);stroke:var(--rule)}
+  .s-hot{fill:var(--signal-wash);stroke:var(--signal)}
+  .s-ver{fill:var(--verify-wash);stroke:var(--verify)}
+  .t-lab{fill:var(--ink);font-family:var(--display);font-size:12.5px;font-weight:600}
+  .t-sub{fill:var(--ink-soft);font-family:var(--mono);font-size:10px}
+  .t-rate{fill:var(--signal);font-family:var(--mono);font-size:9.5px;letter-spacing:.08em}
+  .t-rate-v{fill:var(--verify);font-family:var(--mono);font-size:9.5px;letter-spacing:.08em}
+  .lane{fill:none;stroke:var(--rule);stroke-dasharray:3 4}
+  .s-band{fill:none;stroke:var(--rule)}
+  .s-opt{fill:var(--sunk);stroke:var(--rule);stroke-dasharray:4 3}
+  .t-band{fill:var(--signal);font-family:var(--mono);font-size:9.5px;letter-spacing:.14em}
+  .t-note{fill:var(--ink-soft);font-family:var(--mono);font-size:9.5px}
+  .weights{fill:none;stroke:var(--verify);stroke-width:1.4;stroke-dasharray:4 3}
+  .arrow{fill:none;stroke:var(--ink-soft);stroke-width:1.4}
+  figcaption{font-family:var(--mono);font-size:11px;color:var(--ink-soft);margin-top:10px;line-height:1.6}
+  .grid{display:grid;gap:14px}
+  .g3{grid-template-columns:repeat(3,1fr)}
+  .g2{grid-template-columns:repeat(2,1fr)}
+  @media(max-width:760px){.g3,.g2{grid-template-columns:1fr}}
+  .stat{border-left:2px solid var(--signal);padding:2px 0 2px 12px}
+  .stat .n{font-family:var(--mono);font-size:26px;font-weight:600;letter-spacing:-.02em;
+           display:block;font-variant-numeric:tabular-nums}
+  .stat .k{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;
+           color:var(--ink-soft);display:block;margin-top:3px}
+  table{border-collapse:collapse;width:100%;font-size:14px}
+  th,td{text-align:left;padding:7px 10px;border-bottom:1px solid var(--rule)}
+  th{font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;
+     color:var(--ink-soft);font-weight:500}
+  td.num{font-family:var(--mono);text-align:right;font-variant-numeric:tabular-nums}
+  tr.win td{background:var(--verify-wash)}
+  tr.win td:first-child{box-shadow:inset 2px 0 0 var(--verify)}
+  code,.m{font-family:var(--mono);font-size:.88em;background:var(--sunk);
+          padding:1px 5px;border-radius:2px}
+  .finding{border-top:2px solid var(--alarm);padding-top:11px}
+  .finding.pos{border-top-color:var(--verify)}
+  .finding h3{font-family:var(--display);font-size:14px;font-weight:600;margin:0 0 5px;letter-spacing:.01em}
+  .finding p{margin:0;font-size:14px;color:var(--ink-soft)}
+  .finding p strong{color:var(--ink);font-weight:600}
+  .verdict{font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;
+           color:var(--alarm);display:block;margin-bottom:6px}
+  .finding.pos .verdict{color:var(--verify)}
+  .bar{height:7px;background:var(--sunk);border-radius:1px;overflow:hidden;margin-top:5px}
+  .bar i{display:block;height:100%;background:var(--signal)}
+  ul{margin:0;padding-left:18px}
+  li{margin-bottom:7px;font-size:14.5px;color:var(--ink-soft)}
+  li strong{color:var(--ink);font-weight:600}
+  .foot{font-family:var(--mono);font-size:10.5px;color:var(--ink-soft);letter-spacing:.04em;
+        display:flex;gap:18px;flex-wrap:wrap;border-top:1px solid var(--rule);padding-top:12px;margin-top:26px}
+</style>
+
+<div class="deck">
+
+  <section class="plate">
+    <span class="plate-tag">Plate 1 / 2 &nbsp;·&nbsp; What we built</span>
+    <p class="eyebrow">AHC Visual Intelligence Hackathon</p>
+    <h1>Fix the labels first, then the cascade is small enough for a laptop</h1>
+    <p class="lede">Eleven anomaly classes across CCTV, dashcam and drone footage — no CUDA, nothing hosted in
+      the runtime path. Two bands: an <strong>offline pass that corrects the training labels</strong>, and a
+      runtime path where a frozen encoder scans every frame and a 1M-parameter head reads each 8-second window
+      in order. A vision-language stage sits behind the same interface — we measured it, and the shipped run
+      does not need it.</p>
+
+    <figure>
+      <div class="diagram-wrap">
+        <svg viewBox="0 0 900 350" role="img" aria-label="Offline relabelling feeding a runtime cascade">
+
+          <rect class="s-band" x="10" y="14" width="880" height="112" rx="3"></rect>
+          <text class="t-band" x="24" y="34">OFFLINE &middot; ONCE &middot; THE STEP THAT MATTERED</text>
+
+          <rect class="s-box" x="24"  y="48" width="150" height="52" rx="2"></rect>
+          <text class="t-lab" x="36" y="68">12 class folders</text>
+          <text class="t-sub" x="36" y="84">2,952 clips</text>
+
+          <rect class="s-hot" x="206" y="48" width="176" height="52" rx="2"></rect>
+          <text class="t-lab" x="218" y="68">Re-derive each label</text>
+          <text class="t-sub" x="218" y="84">from description_summary</text>
+
+          <rect class="s-hot" x="414" y="48" width="166" height="52" rx="2"></rect>
+          <text class="t-lab" x="426" y="68">520 rows corrected</text>
+          <text class="t-sub" x="426" y="84">18% of the training set</text>
+
+          <rect class="s-box" x="612" y="48" width="160" height="52" rx="2"></rect>
+          <text class="t-lab" x="624" y="68">Train the head</text>
+          <text class="t-sub" x="624" y="84">~1M params &middot; minutes</text>
+
+          <path class="arrow" d="M174 74 H202" marker-end="url(#a)"></path>
+          <path class="arrow" d="M382 74 H410" marker-end="url(#a)"></path>
+          <path class="arrow" d="M580 74 H608" marker-end="url(#a)"></path>
+
+          <text class="t-note" x="206" y="115">accidents 565 &rarr; 951 &nbsp;&middot;&nbsp; road_spill 151 &rarr; 0 &nbsp;&middot;&nbsp; wrong_way 164 &rarr; 35</text>
+
+          <path class="weights" d="M692 100 V150" marker-end="url(#a)"></path>
+          <text class="t-note" x="700" y="130">weights</text>
+
+          <rect class="s-band" x="10" y="150" width="880" height="188" rx="3"></rect>
+          <text class="t-band" x="24" y="170">RUNTIME &middot; PER VIDEO &middot; 0.035&times; REALTIME</text>
+
+          <rect class="s-box" x="24"  y="186" width="140" height="50" rx="2"></rect>
+          <text class="t-lab" x="36" y="206">Decode @ 2 fps</text>
+          <text class="t-sub" x="36" y="222">every frame</text>
+
+          <rect class="s-hot" x="196" y="186" width="156" height="50" rx="2"></rect>
+          <text class="t-lab" x="208" y="206">SigLIP2 (frozen)</text>
+          <text class="t-sub" x="208" y="222">768-d per frame</text>
+
+          <rect class="s-ver" x="384" y="186" width="166" height="50" rx="2"></rect>
+          <text class="t-lab" x="396" y="206">Temporal head</text>
+          <text class="t-sub" x="396" y="222">16-frame window, in order</text>
+
+          <rect class="s-box" x="582" y="186" width="160" height="50" rx="2"></rect>
+          <text class="t-lab" x="594" y="206">Per-class priors</text>
+          <text class="t-sub" x="594" y="222">hysteresis &middot; min-dur</text>
+
+          <path class="arrow" d="M164 211 H192" marker-end="url(#a)"></path>
+          <path class="arrow" d="M352 211 H380" marker-end="url(#a)"></path>
+          <path class="arrow" d="M550 211 H578" marker-end="url(#a)"></path>
+          <path class="arrow" d="M662 236 V262 H326" marker-end="url(#a)"></path>
+
+          <rect class="s-box" x="196" y="266" width="160" height="50" rx="2"></rect>
+          <text class="t-lab" x="208" y="286">Events + timings</text>
+          <text class="t-sub" x="208" y="302">validated JSON</text>
+
+          <rect class="s-opt" x="396" y="266" width="200" height="50" rx="2"></rect>
+          <text class="t-lab" x="408" y="286">Qwen3-VL-8B (optional)</text>
+          <text class="t-sub" x="408" y="302">measured; not in shipped run</text>
+
+          <path class="arrow" d="M356 291 H392" marker-end="url(#a)" stroke-dasharray="3 3"></path>
+
+          <text class="t-note" x="628" y="286">The cheap path handles the volume.</text>
+          <text class="t-note" x="628" y="302">Keeping the costly stage optional is</text>
+          <text class="t-note" x="628" y="318">how we learned it was not the fix.</text>
+
+          <defs>
+            <marker id="a" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="6" markerHeight="6" orient="auto">
+              <path d="M0 0 L8 4 L0 8 z" fill="var(--ink-soft)"></path>
+            </marker>
+          </defs>
+        </svg>
+      </div>
+      <figcaption>The offline band is where the score came from. Folder names disagreed with the footage —
+        <span class="m">road_spill_or_debris</span> was 99% collisions — so 386 crashes were sitting under the
+        wrong class until they were re-derived from each clip's own description.</figcaption>
+    </figure>
+
+    <h2>Measured, on one M2 Max</h2>
+    <div class="grid g3">
+      <div class="stat"><span class="n">0.035×</span><span class="k">realtime factor</span></div>
+      <div class="stat"><span class="n">2.0 min</span><span class="k">to process 56.5 min of video</span></div>
+      <div class="stat"><span class="n">~1M</span><span class="k">trained parameters, 11 classes</span></div>
+    </div>
+    <p class="lede" style="margin-top:16px;font-size:15px">Timing includes decoding and preprocessing, as the
+      spec requires. An earlier build reported <span class="m">24.6 ms</span> for a 240-second video because
+      cached features skipped the decode — a ~10,000× speedup that was purely an artefact of our own cache.
+      Caught, fixed, and re-measured on a cold decode before submitting.</p>
+  </section>
+
+  <section class="plate">
+    <span class="plate-tag">Plate 2 / 2 &nbsp;·&nbsp; What we learned</span>
+    <p class="eyebrow">Evidence, including what failed</p>
+    <h1>Every change to the model failed. Fixing the data worked.</h1>
+    <p class="lede">A larger vision-language model, a verification gate, and a rewritten prompt were each tested
+      against a control. All three came back flat or negative. What moved the score was discovering that
+      <strong>the training labels were wrong</strong> — and correcting them.</p>
+
+    <h2>Ablation</h2>
+    <table>
+      <thead><tr><th>Configuration</th><th style="text-align:right">L1 / 25</th>
+        <th style="text-align:right">L2 / 35</th><th style="text-align:right">L3 / 40</th>
+        <th style="text-align:right">Total</th></tr></thead>
+      <tbody>
+        <tr><td>Zero-shot embedding similarity</td><td class="num">12.0</td><td class="num">6.5</td><td class="num">6.0</td><td class="num">24.5</td></tr>
+        <tr><td>+ VLM classifies Level 1, false alarms pruned</td><td class="num">14.1</td><td class="num">11.7</td><td class="num">6.0</td><td class="num">31.7</td></tr>
+        <tr class="win"><td>+ temporal head on <strong>relabelled</strong> data</td><td class="num">17.2</td><td class="num">20.2</td><td class="num">16.4</td><td class="num">53.7</td></tr>
+      </tbody>
+    </table>
+    <figcaption style="margin-top:9px">Level 2 rose 6.5 → 20.2. Below 11.7 it is better to predict nothing at
+      all, so until the head existed, silence was the correct answer on Level 2.</figcaption>
+
+    <h2>The finding: folder labels disagreed with the footage</h2>
+    <div class="grid g2">
+      <div>
+        <p class="lede" style="font-size:15px">Each training folder is named for a class, but the clips inside
+          often showed something else. <span class="m">road_spill_or_debris</span> was <strong>99% collision
+          footage</strong> — debris is what a crash leaves behind. Re-deriving every label from its own
+          <span class="m">description_summary</span> changed <strong>520 of 2,952 rows</strong>.</p>
+        <p class="lede" style="font-size:15px;margin-top:12px">That moved <strong>386 collisions into
+          <span class="m">traffic_accident</span></strong>, the single most common event in the test set — and
+          emptied <span class="m">road_spill_or_debris</span> entirely, revealing it had no genuine examples
+          at all.</p>
+      </div>
+      <div>
+        <table>
+          <thead><tr><th>Class</th><th style="text-align:right">Folder</th><th style="text-align:right">Corrected</th></tr></thead>
+          <tbody>
+            <tr class="win"><td>traffic_accident</td><td class="num">565</td><td class="num">951</td></tr>
+            <tr><td>road_spill_or_debris</td><td class="num">151</td><td class="num">0</td></tr>
+            <tr><td>wrong_way_driving</td><td class="num">164</td><td class="num">35</td></tr>
+            <tr><td>stalled_or_broken_down</td><td class="num">223</td><td class="num">103</td></tr>
+            <tr><td>vehicle_blocking_traffic</td><td class="num">148</td><td class="num">62</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <h2>What the corrected data bought</h2>
+    <div class="grid g3">
+      <div class="stat"><span class="n">0 &rarr; 3</span><span class="k">accidents detected (of 13)</span></div>
+      <div class="stat"><span class="n">24 &rarr; 4</span><span class="k">blocking-traffic false alarms</span></div>
+      <div class="stat"><span class="n">17 &rarr; 0</span><span class="k">wrong-way false alarms</span></div>
+    </div>
+    <p class="lede" style="font-size:15px;margin-top:14px">Zero-shot never found a single collision: it compares
+      a clip to the <em>text embedding of a class name</em>, and the phrase &ldquo;vehicle driving the wrong way
+      against oncoming traffic&rdquo; sits close to any two-way traffic scene. The head reads the 16-frame
+      sequence instead, and with only 35 surviving wrong-way examples it learned the class was unreliable and
+      stopped predicting it — removing every false alarm the benchmark had flagged.</p>
+
+    <h2>The three that failed</h2>
+    <div class="grid g3">
+      <div class="finding">
+        <span class="verdict">No gain</span>
+        <h3>A 2.7&times; larger model tied</h3>
+        <p>Qwen3-VL-8B matched Qwen2.5-VL-3B at <strong>14.1</strong> — better at naming the class (.458 vs .417),
+          worse at anomaly-vs-normal (.667 vs .708). Exactly cancelling. Capability was never the bottleneck.</p>
+      </div>
+      <div class="finding">
+        <span class="verdict">Cost us points</span>
+        <h3>The gate was calibrated and still lost</h3>
+        <p>It removed <strong>14 false alarms and 0 real events</strong>, but caught only 30% of them, and on one
+          video removed the sole interval and forfeited the alert credit. Net <strong>29.6 &rarr; 27.6</strong>.
+          A gate can drop a guess; it cannot correct one.</p>
+      </div>
+      <div class="finding">
+        <span class="verdict">Backwards twice</span>
+        <h3>Our prompt reasoning was wrong</h3>
+        <p>We expected a less cautious prompt to recover missed anomalies. It produced <em>more</em>
+          &ldquo;normal&rdquo; answers on both models (<strong>14.1 &rarr; 13.5</strong>). Frame count was
+          isolated separately and was not the cause.</p>
+      </div>
+    </div>
+
+    <h2>What we would do next</h2>
+    <ul>
+      <li><strong>Object detection and tracking.</strong> <span class="m">wrong_way_driving</span> and
+        <span class="m">vehicle_blocking_traffic</span> ask whether <em>one</em> vehicle's heading opposes the
+        surrounding flow. Whole-frame appearance cannot express that — which is why the honest outcome was to
+        stop predicting them rather than to predict them badly.</li>
+      <li><strong>More cameras per class.</strong> The head overfit hard (train 0.011 / val 0.296) and we kept the
+        best-validation epoch. Three classes come from essentially one camera each, so it memorises cameras
+        rather than concepts.</li>
+      <li><strong>Recover the classes with no data.</strong> <span class="m">road_spill_or_debris</span> ended with
+        zero genuine examples and <span class="m">loitering</span> never had usable annotations — both are
+        currently undetectable by construction, not by failure.</li>
+    </ul>
+
+    <div class="foot">
+      <span>SigLIP2-base (frozen) &middot; 1M-param temporal head &middot; Qwen3-VL-8B-4bit</span>
+      <span>2,952 train / 34 test videos</span>
+      <span>0.035&times; realtime &middot; no CUDA</span>
+    </div>
+  </section>
+</div>

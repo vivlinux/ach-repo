@@ -1,0 +1,48 @@
+video_id,level,is_anomaly,class_name,start_time_sec,end_time_sec,description_summary
+T001,1,0,normal,,,vlm=normal
+T002,1,0,normal,,,vlm=normal
+T003,1,0,normal,,,vlm=normal
+T004,1,1,traffic_congestion,,,vlm=traffic_congestion
+T005,1,1,traffic_accident,,,vlm=traffic_accident
+T006,1,1,vehicle_blocking_traffic,,,vlm=vehicle_blocking_traffic
+T007,1,1,vehicle_blocking_traffic,,,vlm=vehicle_blocking_traffic
+T008,1,0,normal,,,vlm=normal
+T009,1,1,traffic_congestion,,,vlm=traffic_congestion
+T010,1,0,normal,,,vlm=normal
+T011,1,1,road_spill_or_debris,,,vlm=road_spill_or_debris
+T012,1,1,fire,,,vlm=fire
+T013,1,1,smoke,,,vlm=smoke
+T014,1,1,smoke,,,vlm=smoke
+T015,1,1,smoke,,,vlm=smoke
+T016,1,1,waterlogging_or_flood,,,vlm=waterlogging_or_flood
+T017,1,1,waterlogging_or_flood,,,vlm=waterlogging_or_flood
+T018,1,1,traffic_accident,,,vlm=traffic_accident
+T019,1,1,waterlogging_or_flood,,,vlm=waterlogging_or_flood
+T020,1,0,normal,,,vlm=normal
+T021,1,0,normal,,,vlm=normal
+T022,1,0,normal,,,vlm=normal
+T023,1,0,normal,,,vlm=normal
+T024,1,1,vehicle_blocking_traffic,,,vlm=vehicle_blocking_traffic
+T025,1,1,vehicle_blocking_traffic,,,confidence=0.58
+T026,1,1,wrong_way_driving,,,confidence=0.88
+T027,1,1,traffic_congestion,,,confidence=0.72
+T028,1,1,wrong_way_driving,,,confidence=0.94
+T029,1,1,vehicle_blocking_traffic,,,confidence=0.75
+T030,1,1,vehicle_blocking_traffic,,,confidence=0.59
+T031,1,1,traffic_congestion,,,confidence=0.83
+T031,2,1,traffic_congestion,0.0,359.5,Yes. There is heavy traffic on the highway.
+T032,1,0,normal,,,confidence=0.69
+T033,1,1,wrong_way_driving,,,confidence=0.95
+T033,2,1,wrong_way_driving,0.0,33.53,Yes. The cars are driving on the road.
+T033,2,1,vehicle_blocking_traffic,40.04,61.56,Yes. A truck drives down the road and hits a pole.
+T033,2,1,wrong_way_driving,56.06,85.59,Yes. The car drives past a stop sign and continues down the road.
+T033,2,1,vehicle_blocking_traffic,80.08,103.6,Yes. The scene shows a busy intersection with cars and trucks moving through the intersection.
+T033,2,1,wrong_way_driving,100.1,207.71,Yes. A person is taking a picture of a sign on the side of the road.
+T033,2,1,vehicle_blocking_traffic,294.29,321.82,Yes. A man is walking in the rain.
+T033,2,1,wrong_way_driving,316.32,369.87,Yes. The car drives on the road and stops at the intersection.
+T033,2,1,vehicle_blocking_traffic,364.36,383.88,Yes. A white limousine is parked on the side of the road.
+T033,2,1,wrong_way_driving,422.42,485.99,Yes. A car drives down the road.
+T033,2,1,vehicle_blocking_traffic,480.48,498.0,Yes. A woman walks down the street as a red truck drives by.
+T033,2,1,wrong_way_driving,492.49,514.01,Yes. A black car drives past the camera.
+T033,2,1,loitering_or_suspicious_presence,582.58,596.1,Yes. A van drives into a parking garage.
+T034,1,1,road_spill_or_debris,,,confidence=0.87

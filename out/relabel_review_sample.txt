@@ -1,0 +1,1566 @@
+[fighting_or_violence] TR00511: fighting_or_violence -> traffic_accident (high)
+  A motorcycle carrying two passengers collides with a uniformed individual who steps directly into it
+
+[fighting_or_violence] TR00544: fighting_or_violence -> traffic_accident (high)
+  A black SUV moves forward and turns left, running over a person who had fallen onto the snow-covered
+
+[fighting_or_violence] TR00567: fighting_or_violence -> traffic_accident (high)
+  A dark green SUV enters the frame from the right at high speed, driving off-road across a dirt and g
+
+[fighting_or_violence] TR00602: fighting_or_violence -> traffic_accident (high)
+  A red truck navigating a sharp curve completely loses its balance and flips over onto its side, coll
+
+[fighting_or_violence] TR02757: fighting_or_violence -> traffic_accident (high)
+  A black SUV moves forward and turns left, running over a person who had fallen onto the snow-covered
+
+[fighting_or_violence] TR02767: fighting_or_violence -> traffic_accident (high)
+  A motorcycle carrying two passengers collides with a uniformed individual who steps directly into it
+
+[fighting_or_violence] TR02777: fighting_or_violence -> traffic_accident (high)
+  A dark green SUV enters the frame from the right at high speed, driving off-road across a dirt and g
+
+[fighting_or_violence] TR02786: fighting_or_violence -> traffic_accident (high)
+  A red truck navigating a sharp curve completely loses its balance and flips over onto its side, coll
+
+[fire] TR00348: fire -> traffic_accident (high)
+  A fast-moving white pick-up truck violates a blinking red light and drives straight into the interse
+
+[fire] TR00370: fire -> traffic_accident (high)
+  A blue sedan loses control and speeds into a gas station forecourt, striking a pedestrian in a yello
+
+[fire] TR02773: fire -> traffic_accident (high)
+  A blue sedan loses control and speeds into a gas station forecourt, striking a pedestrian in a yello
+
+[road_spill_or_debris] TR00180: road_spill_or_debris -> traffic_accident (high)
+  A red container truck traveling in the leftmost lane rear-ends a truck ahead of it due to a failure 
+
+[road_spill_or_debris] TR00181: road_spill_or_debris -> traffic_accident (high)
+  A red truck traveling straight through the intersection strikes a white van in a severe T-bone colli
+
+[road_spill_or_debris] TR00182: road_spill_or_debris -> traffic_accident (high)
+  A small truck transporting white boxes collides with the side of a large car carrier truck that is p
+
+[road_spill_or_debris] TR00183: road_spill_or_debris -> traffic_accident (high)
+  A white hatchback traveling from top to bottom loses control and crashes head-on into the central me
+
+[road_spill_or_debris] TR00184: road_spill_or_debris -> traffic_accident (high)
+  A white van attempting a left turn is struck by a red truck traveling straight from the top-left, wh
+
+[road_spill_or_debris] TR00185: road_spill_or_debris -> traffic_accident (high)
+  A white truck traveling straight in the left lane collides head-on with a light brown car that is st
+
+[road_spill_or_debris] TR00186: road_spill_or_debris -> traffic_accident (high)
+  A dark gray SUV traveling at a high speed from the bottom of the frame enters the intersection witho
+
+[road_spill_or_debris] TR00187: road_spill_or_debris -> traffic_accident (high)
+  A black sedan traveling at excessive speed loses control, skidding across lanes to the left before c
+
+[road_spill_or_debris] TR00188: road_spill_or_debris -> traffic_accident (high)
+  A red truck traveling from the bottom to the top of the frame suddenly veers left and collides head-
+
+[road_spill_or_debris] TR00189: road_spill_or_debris -> traffic_accident (high)
+  A speeding black hatchback violently rear-ends a stalled white hatchback in an active highway lane. 
+
+[road_spill_or_debris] TR00190: road_spill_or_debris -> traffic_accident (high)
+  A large truck traveling from the bottom left toward the top of the frame in the third lane loses tra
+
+[road_spill_or_debris] TR00191: road_spill_or_debris -> traffic_accident (high)
+  A white SUV suddenly loses control and veers sharply to the right, resulting in a violent head-on co
+
+[road_spill_or_debris] TR00192: road_spill_or_debris -> traffic_accident (high)
+  A small blue truck executing a left turn from the sixth lane fails to yield to oncoming traffic, res
+
+[road_spill_or_debris] TR00193: road_spill_or_debris -> traffic_accident (high)
+  A white sedan enters the intersection at high speed and is rear-ended by a black SUV, creating a mom
+
+[road_spill_or_debris] TR00194: road_spill_or_debris -> traffic_accident (high)
+  A blue sedan collides head-on with a guardrail and crash attenuator barrels at the gore area of a hi
+
+[road_spill_or_debris] TR00195: road_spill_or_debris -> traffic_accident (high)
+  A severe multi-vehicle accident occurs when a red truck loses its balance and flips over a black SUV
+
+[road_spill_or_debris] TR00196: road_spill_or_debris -> traffic_accident (high)
+  A speeding truck veers off its path and violently collides head-on with a parked minivan along the r
+
+[road_spill_or_debris] TR00197: road_spill_or_debris -> traffic_accident (high)
+  A white sedan traveling in the second lane deviates from its path and violently collides head-on wit
+
+[road_spill_or_debris] TR00198: road_spill_or_debris -> traffic_accident (high)
+  A black SUV traveling at high speed collides violently with the rear of a stationary red dump truck 
+
+[road_spill_or_debris] TR00199: road_spill_or_debris -> traffic_accident (high)
+  A black car traveling in lane 3 veers sharply to the right and crashes head-on into the central medi
+
+[road_spill_or_debris] TR00201: road_spill_or_debris -> traffic_accident (high)
+  A white truck traveling at a moderate to fast speed suddenly veers out of its lane and collides head
+
+[road_spill_or_debris] TR00202: road_spill_or_debris -> traffic_accident (high)
+  A black sedan initiates a left turn from lane three into lane two, crossing directly into the path o
+
+[road_spill_or_debris] TR00203: road_spill_or_debris -> traffic_accident (high)
+  A black sedan traveling from left to right veers suddenly and collides head-on with the central medi
+
+[road_spill_or_debris] TR00204: road_spill_or_debris -> traffic_accident (high)
+  A gray sedan traveling at high speed through the intersection collides violently with several motorc
+
+[road_spill_or_debris] TR00205: road_spill_or_debris -> traffic_accident (high)
+  A light-colored car traveling at high speed veers out of its lane and violently rear-ends a dark-col
+
+[road_spill_or_debris] TR00206: road_spill_or_debris -> traffic_accident (high)
+  A black sedan entering the intersection from the bottom left fails to yield to oncoming traffic, res
+
+[road_spill_or_debris] TR00207: road_spill_or_debris -> traffic_accident (high)
+  A car traveling at an exceptionally high rate of speed enters the frame from the right and strikes a
+
+[road_spill_or_debris] TR00208: road_spill_or_debris -> traffic_accident (high)
+  A black SUV traveling in the third lane from the left veers out of its lane and collides head-on wit
+
+[road_spill_or_debris] TR00209: road_spill_or_debris -> traffic_accident (high)
+  A black car traveling in the leftmost lane collides with the rear end of a black bus, causing the ca
+
+[road_spill_or_debris] TR00210: road_spill_or_debris -> fire (manual)
+  A massive explosion detonates on the right side of the road in the distance, instantly generating a 
+
+[road_spill_or_debris] TR00211: road_spill_or_debris -> traffic_accident (high)
+  A white sedan traveling from right to left collides with a white SUV moving from top to bottom in a 
+
+[road_spill_or_debris] TR00212: road_spill_or_debris -> traffic_accident (high)
+  A black car enters from the top-left of the frame and violently crashes into the road median in a T-
+
+[road_spill_or_debris] TR00213: road_spill_or_debris -> traffic_accident (high)
+  A red sedan traveling at high speed on the main road strikes a beige sedan in a severe T-bone collis
+
+[road_spill_or_debris] TR00214: road_spill_or_debris -> traffic_accident (high)
+  A black hatchback traveling straight from the bottom left collides violently in a T-bone fashion wit
+
+[road_spill_or_debris] TR00215: road_spill_or_debris -> traffic_accident (high)
+  A green truck traveling from the right side of the frame to the left violently T-bones a silver seda
+
+[road_spill_or_debris] TR00216: road_spill_or_debris -> traffic_accident (high)
+  A blue mini truck and a white mini truck engage in a severe T-bone collision at the center of the in
+
+[road_spill_or_debris] TR00217: road_spill_or_debris -> traffic_accident (high)
+  A blue hatchback veers off the paved roadway and violently collides with the rear end of a parked bl
+
+[road_spill_or_debris] TR00218: road_spill_or_debris -> traffic_accident (high)
+  A black sedan traveling at an excessive speed strikes a raised central divider head-on, causing the 
+
+[road_spill_or_debris] TR00219: road_spill_or_debris -> traffic_accident (high)
+  A black sedan traveling from the bottom of the frame in lane 3 loses control on the wet road and vio
+
+[road_spill_or_debris] TR00220: road_spill_or_debris -> traffic_accident (high)
+  A black motorcycle traveling straight in lane 2 suffers a severe head-on collision with a black seda
+
+[road_spill_or_debris] TR00221: road_spill_or_debris -> traffic_accident (high)
+  A heavy truck traveling from the upper left veers off the roadway and crashes head-on into a small w
+
+[road_spill_or_debris] TR00222: road_spill_or_debris -> traffic_accident (high)
+  A white car enters from the top right of the frame at an excessive rate of speed and is involved in 
+
+[road_spill_or_debris] TR00223: road_spill_or_debris -> traffic_accident (high)
+  A brown sedan performs an unsafe lane change from the fifth to the fourth lane, cutting directly int
+
+[road_spill_or_debris] TR00224: road_spill_or_debris -> traffic_accident (high)
+  A white sedan traveling at an excessively high speed crashes head-on into a concrete toll booth colu
+
+[road_spill_or_debris] TR00225: road_spill_or_debris -> traffic_accident (high)
+  A white SUV traveling at a high speed in the fifth lane fails to maintain a safe following distance 
+
+[road_spill_or_debris] TR00226: road_spill_or_debris -> traffic_accident (high)
+  A black sedan traveling from the top of the frame loses control and crashes head-on into a stationar
+
+[road_spill_or_debris] TR00227: road_spill_or_debris -> traffic_accident (high)
+  A black sedan traveling on a highway fails to navigate a lane split and collides head-on with a guar
+
+[road_spill_or_debris] TR00228: road_spill_or_debris -> traffic_accident (high)
+  A red truck traveling on a wet highway loses control and swerves violently across multiple lanes, ja
+
+[road_spill_or_debris] TR00229: road_spill_or_debris -> traffic_accident (high)
+  A white truck traveling straight through the intersection collides with a motorcycle crossing from l
+
+[road_spill_or_debris] TR00230: road_spill_or_debris -> traffic_accident (high)
+  A red truck traveling straight from the right collides with another red truck attempting a left turn
+
+[road_spill_or_debris] TR00231: road_spill_or_debris -> traffic_accident (high)
+  A gray SUV collides with the rear of a gray hatchback that is stationary at a red light in the secon
+
+[road_spill_or_debris] TR00232: road_spill_or_debris -> traffic_accident (high)
+  A red truck moving downward along the road attempts to turn right but loses control, veering into a 
+
+[road_spill_or_debris] TR00233: road_spill_or_debris -> traffic_accident (high)
+  A white SUV enters the intersection from the bottom of the frame and illegally drives through a red 
+
+[road_spill_or_debris] TR00234: road_spill_or_debris -> traffic_accident (high)
+  A white truck rear-ends a red truck, triggering a multi-vehicle pile-up where the white truck is pus
+
+[road_spill_or_debris] TR00235: road_spill_or_debris -> traffic_accident (high)
+  A white sedan traveling in the ongoing lanes suddenly swerves left, crossing into the oncoming traff
+
+[road_spill_or_debris] TR00236: road_spill_or_debris -> traffic_accident (high)
+  A black motorcycle enters the intersection from the bottom right and strikes the side of a white sed
+
+[road_spill_or_debris] TR00237: road_spill_or_debris -> traffic_accident (high)
+  A white car enters from the right and crashes head-on into the building's glass partition door, caus
+
+[road_spill_or_debris] TR00238: road_spill_or_debris -> traffic_accident (high)
+  A gray sedan traveling in the fifth lane crashes violently into a physical road divider and its atta
+
+[road_spill_or_debris] TR00240: road_spill_or_debris -> traffic_accident (high)
+  A T-bone collision occurs at the intersection between a red truck loaded with stacked wooden boards 
+
+[road_spill_or_debris] TR00241: road_spill_or_debris -> traffic_accident (high)
+  A red and green truck collides with a white truck in a left-turn collision within the intersection. 
+
+[road_spill_or_debris] TR00242: road_spill_or_debris -> traffic_accident (high)
+  A white bus traveling from right to left collides with the underside of a height barrier overpass, c
+
+[road_spill_or_debris] TR00243: road_spill_or_debris -> traffic_accident (high)
+  A white box truck suddenly loses control and swerves sharply to the right, tipping over onto its lef
+
+[road_spill_or_debris] TR00244: road_spill_or_debris -> traffic_accident (high)
+  A white sedan pulls forward to execute a right turn onto a main road and is struck by a red truck tr
+
+[road_spill_or_debris] TR00245: road_spill_or_debris -> traffic_accident (high)
+  A truck traveling from top to bottom collides head-on with the central median barrier, creating a si
+
+[road_spill_or_debris] TR00246: road_spill_or_debris -> traffic_accident (high)
+  A white sedan suddenly loses control and collides head-on into the metal median divider, causing the
+
+[road_spill_or_debris] TR00247: road_spill_or_debris -> traffic_accident (high)
+  A white SUV traveling at high speed collides head-on with a concrete divider at the toll plaza, caus
+
+[road_spill_or_debris] TR00248: road_spill_or_debris -> traffic_accident (high)
+  A large truck traveling straight in the middle lane T-bones a black sedan that has failed to yield w
+
+[road_spill_or_debris] TR00249: road_spill_or_debris -> traffic_accident (high)
+  A silver sedan entering from the right at a high rate of speed violently T-bones a silver SUV that i
+
+[road_spill_or_debris] TR00250: road_spill_or_debris -> traffic_accident (high)
+  A white sedan and a gray sedan enter an uncontrolled intersection simultaneously and engage in a sev
+
+[road_spill_or_debris] TR00251: road_spill_or_debris -> traffic_accident (high)
+  A white sedan loses control and veers off the roadway, running directly over a landscaped median isl
+
+[road_spill_or_debris] TR00252: road_spill_or_debris -> traffic_accident (high)
+  A black SUV and a motorcycle collide violently in a left-turn collision at the intersection, creatin
+
+[road_spill_or_debris] TR00253: road_spill_or_debris -> traffic_accident (high)
+  A white car traveling along the road suddenly loses control and veers sharply to the right, mounting
+
+[road_spill_or_debris] TR00254: road_spill_or_debris -> traffic_accident (high)
+  A gray sedan traveling along the demarcation of the third and fourth lanes collides head-on with a s
+
+[road_spill_or_debris] TR00255: road_spill_or_debris -> traffic_accident (high)
+  A black car traveling at high speed from right to left crosses the intersection and collides head-on
+
+[road_spill_or_debris] TR00256: road_spill_or_debris -> traffic_accident (high)
+  A blue sedan enters the frame and deviates from its travel path, colliding violently with the roadsi
+
+[road_spill_or_debris] TR00257: road_spill_or_debris -> traffic_accident (high)
+  A black sedan attempts to merge or cross the path of a large red dump truck, resulting in a severe T
+
+[road_spill_or_debris] TR00258: road_spill_or_debris -> traffic_accident (high)
+  A black sedan enters the frame from the right at an excessively high speed and violently crashes int
+
+[road_spill_or_debris] TR00259: road_spill_or_debris -> traffic_accident (high)
+  A red truck traveling straight through the intersection collides violently with a blue truck that is
+
+[road_spill_or_debris] TR02752: road_spill_or_debris -> traffic_accident (high)
+  A black hatchback traveling straight from the bottom left collides violently in a T-bone fashion wit
+
+[road_spill_or_debris] TR02762: road_spill_or_debris -> traffic_accident (high)
+  A gray sedan traveling at high speed through the intersection collides violently with several motorc
+
+[road_spill_or_debris] TR02772: road_spill_or_debris -> traffic_accident (high)
+  A blue mini truck and a white mini truck engage in a severe T-bone collision at the center of the in
+
+[road_spill_or_debris] TR02782: road_spill_or_debris -> traffic_accident (high)
+  A moving black truck violently rear-ends a black truck that is stalled and stationary in the first l
+
+[road_spill_or_debris] TR02791: road_spill_or_debris -> traffic_accident (high)
+  A red truck violently T-bones a blue hatchback in the middle of the intersection, generating a massi
+
+[road_spill_or_debris] TR02799: road_spill_or_debris -> traffic_accident (high)
+  A white SUV traveling at a high speed in the fifth lane fails to maintain a safe following distance 
+
+[road_spill_or_debris] TR02807: road_spill_or_debris -> traffic_accident (high)
+  A black sedan traveling from the bottom of the frame in lane 3 loses control on the wet road and vio
+
+[road_spill_or_debris] TR02815: road_spill_or_debris -> traffic_accident (high)
+  A black car enters from the top-left of the frame and violently crashes into the road median in a T-
+
+[road_spill_or_debris] TR02823: road_spill_or_debris -> traffic_accident (high)
+  A speeding black hatchback violently rear-ends a stalled white hatchback in an active highway lane. 
+
+[road_spill_or_debris] TR02831: road_spill_or_debris -> traffic_accident (high)
+  A blue hatchback veers off the paved roadway and violently collides with the rear end of a parked bl
+
+[road_spill_or_debris] TR02838: road_spill_or_debris -> traffic_accident (high)
+  A black sedan traveling on a highway fails to navigate a lane split and collides head-on with a guar
+
+[road_spill_or_debris] TR02845: road_spill_or_debris -> fire (manual)
+  A massive explosion detonates on the right side of the road in the distance, instantly generating a 
+
+[road_spill_or_debris] TR02852: road_spill_or_debris -> traffic_accident (high)
+  A red truck traveling straight through the intersection collides violently with a blue truck that is
+
+[road_spill_or_debris] TR02859: road_spill_or_debris -> traffic_accident (high)
+  A black sedan traveling at an excessive speed strikes a raised central divider head-on, causing the 
+
+[road_spill_or_debris] TR02866: road_spill_or_debris -> traffic_accident (high)
+  A red truck traveling straight from the right collides with another red truck attempting a left turn
+
+[road_spill_or_debris] TR02873: road_spill_or_debris -> traffic_accident (high)
+  A black SUV traveling in the third lane from the left veers out of its lane and collides head-on wit
+
+[road_spill_or_debris] TR02880: road_spill_or_debris -> traffic_accident (high)
+  A black sedan entering the intersection from the bottom left fails to yield to oncoming traffic, res
+
+[road_spill_or_debris] TR02887: road_spill_or_debris -> traffic_accident (high)
+  A black car traveling in lane 3 veers sharply to the right and crashes head-on into the central medi
+
+[road_spill_or_debris] TR02894: road_spill_or_debris -> traffic_accident (high)
+  A white truck rear-ends a red truck, triggering a multi-vehicle pile-up where the white truck is pus
+
+[road_spill_or_debris] TR02900: road_spill_or_debris -> traffic_accident (high)
+  A white sedan traveling at an excessively high speed crashes head-on into a concrete toll booth colu
+
+[road_spill_or_debris] TR02906: road_spill_or_debris -> traffic_accident (high)
+  A blue sedan enters the frame and deviates from its travel path, colliding violently with the roadsi
+
+[road_spill_or_debris] TR02912: road_spill_or_debris -> traffic_accident (high)
+  A white van attempting a left turn is struck by a red truck traveling straight from the top-left, wh
+
+[road_spill_or_debris] TR02918: road_spill_or_debris -> traffic_accident (high)
+  A speeding truck veers off its path and violently collides head-on with a parked minivan along the r
+
+[road_spill_or_debris] TR02924: road_spill_or_debris -> traffic_accident (high)
+  A white sedan enters the intersection at high speed and is rear-ended by a black SUV, creating a mom
+
+[road_spill_or_debris] TR02930: road_spill_or_debris -> traffic_accident (high)
+  A car traveling at an exceptionally high rate of speed enters the frame from the right and strikes a
+
+[road_spill_or_debris] TR02936: road_spill_or_debris -> traffic_accident (high)
+  A black sedan initiates a left turn from lane three into lane two, crossing directly into the path o
+
+[road_spill_or_debris] TR02942: road_spill_or_debris -> traffic_accident (high)
+  A white box truck suddenly loses control and swerves sharply to the right, tipping over onto its lef
+
+[road_spill_or_debris] TR02948: road_spill_or_debris -> traffic_accident (high)
+  A white sedan pulls forward to execute a right turn onto a main road and is struck by a red truck tr
+
+[road_spill_or_debris] TR02954: road_spill_or_debris -> traffic_accident (high)
+  A black sedan traveling at excessive speed loses control, skidding across lanes to the left before c
+
+[road_spill_or_debris] TR02960: road_spill_or_debris -> traffic_accident (high)
+  A red and green truck collides with a white truck in a left-turn collision within the intersection. 
+
+[road_spill_or_debris] TR02966: road_spill_or_debris -> traffic_accident (high)
+  A white sedan loses control and veers off the roadway, running directly over a landscaped median isl
+
+[road_spill_or_debris] TR02972: road_spill_or_debris -> traffic_accident (high)
+  A black motorcycle traveling straight in lane 2 suffers a severe head-on collision with a black seda
+
+[road_spill_or_debris] TR02978: road_spill_or_debris -> traffic_accident (high)
+  A black sedan traveling from the top of the frame loses control and crashes head-on into a stationar
+
+[road_spill_or_debris] TR02984: road_spill_or_debris -> traffic_accident (high)
+  A black SUV traveling at high speed collides violently with the rear of a stationary red dump truck 
+
+[road_spill_or_debris] TR02990: road_spill_or_debris -> traffic_accident (high)
+  A red truck traveling from the bottom to the top of the frame suddenly veers left and collides head-
+
+[road_spill_or_debris] TR02996: road_spill_or_debris -> traffic_accident (high)
+  A large truck traveling straight in the middle lane T-bones a black sedan that has failed to yield w
+
+[road_spill_or_debris] TR03002: road_spill_or_debris -> traffic_accident (high)
+  A white car enters from the right and crashes head-on into the building's glass partition door, caus
+
+[road_spill_or_debris] TR03008: road_spill_or_debris -> traffic_accident (high)
+  A black SUV and a motorcycle collide violently in a left-turn collision at the intersection, creatin
+
+[road_spill_or_debris] TR03014: road_spill_or_debris -> traffic_accident (high)
+  A light-colored car traveling at high speed veers out of its lane and violently rear-ends a dark-col
+
+[road_spill_or_debris] TR03020: road_spill_or_debris -> traffic_accident (high)
+  A scooter enters the main road from a median opening and suffers a severe T-bone collision with a gr
+
+[road_spill_or_debris] TR03026: road_spill_or_debris -> traffic_accident (high)
+  A white SUV suddenly loses control and veers sharply to the right, resulting in a violent head-on co
+
+[road_spill_or_debris] TR03032: road_spill_or_debris -> traffic_accident (high)
+  A black car traveling at high speed from right to left crosses the intersection and collides head-on
+
+[road_spill_or_debris] TR03038: road_spill_or_debris -> traffic_accident (high)
+  A truck traveling from top to bottom collides head-on with the central median barrier, creating a si
+
+[road_spill_or_debris] TR03044: road_spill_or_debris -> traffic_accident (high)
+  A white sedan traveling in the ongoing lanes suddenly swerves left, crossing into the oncoming traff
+
+[road_spill_or_debris] TR03050: road_spill_or_debris -> traffic_accident (high)
+  A green truck traveling from the right side of the frame to the left violently T-bones a silver seda
+
+[road_spill_or_debris] TR03056: road_spill_or_debris -> traffic_accident (high)
+  A gray SUV collides with the rear of a gray hatchback that is stationary at a red light in the secon
+
+[road_spill_or_debris] TR03062: road_spill_or_debris -> traffic_accident (high)
+  A white truck traveling at a moderate to fast speed suddenly veers out of its lane and collides head
+
+[road_spill_or_debris] TR03068: road_spill_or_debris -> traffic_accident (high)
+  A gray sedan traveling along the demarcation of the third and fourth lanes collides head-on with a s
+
+[road_spill_or_debris] TR03074: road_spill_or_debris -> traffic_accident (high)
+  A white bus traveling from right to left collides with the underside of a height barrier overpass, c
+
+[road_spill_or_debris] TR03080: road_spill_or_debris -> traffic_accident (high)
+  A black sedan attempts to merge or cross the path of a large red dump truck, resulting in a severe T
+
+[road_spill_or_debris] TR03086: road_spill_or_debris -> traffic_accident (high)
+  A large truck traveling from the bottom left toward the top of the frame in the third lane loses tra
+
+[road_spill_or_debris] TR03092: road_spill_or_debris -> traffic_accident (high)
+  A white sedan traveling in the second lane deviates from its path and violently collides head-on wit
+
+[road_spill_or_debris] TR03098: road_spill_or_debris -> traffic_accident (high)
+  A red truck traveling straight through the intersection strikes a white van in a severe T-bone colli
+
+[road_spill_or_debris] TR03104: road_spill_or_debris -> traffic_accident (high)
+  A white hatchback traveling from top to bottom loses control and crashes head-on into the central me
+
+[road_spill_or_debris] TR03110: road_spill_or_debris -> traffic_accident (high)
+  A red truck moving downward along the road attempts to turn right but loses control, veering into a 
+
+[road_spill_or_debris] TR03116: road_spill_or_debris -> traffic_accident (high)
+  A white SUV traveling at high speed collides head-on with a concrete divider at the toll plaza, caus
+
+[road_spill_or_debris] TR03122: road_spill_or_debris -> traffic_accident (high)
+  A white car traveling along the road suddenly loses control and veers sharply to the right, mounting
+
+[road_spill_or_debris] TR03128: road_spill_or_debris -> traffic_accident (high)
+  A white SUV enters the intersection from the bottom of the frame and illegally drives through a red 
+
+[road_spill_or_debris] TR03134: road_spill_or_debris -> traffic_accident (high)
+  A gray sedan traveling in the fifth lane crashes violently into a physical road divider and its atta
+
+[road_spill_or_debris] TR03140: road_spill_or_debris -> traffic_accident (high)
+  A white car enters from the top right of the frame at an excessive rate of speed and is involved in 
+
+[road_spill_or_debris] TR03146: road_spill_or_debris -> traffic_accident (high)
+  A white sedan traveling from right to left collides with a white SUV moving from top to bottom in a 
+
+[road_spill_or_debris] TR03152: road_spill_or_debris -> traffic_accident (high)
+  A T-bone collision occurs at the intersection between a red truck loaded with stacked wooden boards 
+
+[road_spill_or_debris] TR03158: road_spill_or_debris -> traffic_accident (high)
+  A black sedan traveling from left to right veers suddenly and collides head-on with the central medi
+
+[road_spill_or_debris] TR03164: road_spill_or_debris -> traffic_accident (high)
+  A white sedan and a gray sedan enter an uncontrolled intersection simultaneously and engage in a sev
+
+[road_spill_or_debris] TR03170: road_spill_or_debris -> traffic_accident (high)
+  A heavy truck traveling from the upper left veers off the roadway and crashes head-on into a small w
+
+[road_spill_or_debris] TR03176: road_spill_or_debris -> traffic_accident (high)
+  A white truck traveling straight through the intersection collides with a motorcycle crossing from l
+
+[road_spill_or_debris] TR03182: road_spill_or_debris -> traffic_accident (high)
+  A brown sedan performs an unsafe lane change from the fifth to the fourth lane, cutting directly int
+
+[road_spill_or_debris] TR03188: road_spill_or_debris -> traffic_accident (high)
+  A red container truck traveling in the leftmost lane rear-ends a truck ahead of it due to a failure 
+
+[road_spill_or_debris] TR03194: road_spill_or_debris -> traffic_accident (high)
+  A severe multi-vehicle accident occurs when a red truck loses its balance and flips over a black SUV
+
+[road_spill_or_debris] TR03200: road_spill_or_debris -> traffic_accident (high)
+  A red truck traveling on a wet highway loses control and swerves violently across multiple lanes, ja
+
+[road_spill_or_debris] TR03205: road_spill_or_debris -> traffic_accident (high)
+  A white truck traveling straight in the left lane collides head-on with a light brown car that is st
+
+[road_spill_or_debris] TR03210: road_spill_or_debris -> traffic_accident (high)
+  A silver sedan entering from the right at a high rate of speed violently T-bones a silver SUV that i
+
+[road_spill_or_debris] TR03215: road_spill_or_debris -> traffic_accident (high)
+  A small blue truck executing a left turn from the sixth lane fails to yield to oncoming traffic, res
+
+[smoke] TR00268: smoke -> traffic_accident (high)
+  A silver car traveling at a high rate of speed crashes violently into the concrete structure of a to
+
+[smoke] TR00299: smoke -> traffic_accident (high)
+  An unattended white sedan begins to reverse autonomously from the bottom of the parking area towards
+
+[smoke] TR00305: smoke -> traffic_accident (high)
+  A red cargo truck traveling in Lane 1 collides heavily with the rear of a gray truck moving directly
+
+[smoke] TR00327: smoke -> traffic_accident (high)
+  A white sedan traveling down a slope fails to stop and violently rear-ends a stationary truck stoppe
+
+[smoke] TR00339: smoke -> traffic_accident (high)
+  A red dump truck traveling in the fourth lane violently rear-ends another stationary red dump truck,
+
+[smoke] TR02764: smoke -> traffic_accident (high)
+  A red truck traveling straight in lane 8 fails to maintain its travel path and collides head-on with
+
+[smoke] TR02774: smoke -> traffic_accident (high)
+  A red cargo truck traveling in Lane 1 collides heavily with the rear of a gray truck moving directly
+
+[smoke] TR02783: smoke -> traffic_accident (high)
+  A high-speed white van fails to decelerate and rear-ends a stopped black hatchback, which is then pr
+
+[smoke] TR02792: smoke -> traffic_accident (high)
+  A red dump truck traveling in the fourth lane violently rear-ends another stationary red dump truck,
+
+[smoke] TR02800: smoke -> traffic_accident (high)
+  A white SUV traveling at an excessive speed strikes a concrete lane divider head-on, causing the veh
+
+[smoke] TR02808: smoke -> traffic_accident (high)
+  A white sedan traveling down a slope fails to stop and violently rear-ends a stationary truck stoppe
+
+[smoke] TR02816: smoke -> traffic_accident (high)
+  An unattended white sedan begins to reverse autonomously from the bottom of the parking area towards
+
+[smoke] TR02824: smoke -> traffic_accident (high)
+  A silver car traveling at a high rate of speed crashes violently into the concrete structure of a to
+
+[stalled_or_broken_down_vehicle] TR00880: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A white coupe and a large truck collide in a severe T-bone collision in the middle of the intersecti
+
+[stalled_or_broken_down_vehicle] TR00881: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A three-wheeler executes an erratic diagonal lane change from the eighth lane toward the fifth lane,
+
+[stalled_or_broken_down_vehicle] TR00882: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A black hatchback enters from the bottom right of the frame and crashes into multiple pedestrians, s
+
+[stalled_or_broken_down_vehicle] TR00886: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A silver SUV traveling at high speed from the left strikes a blue three-wheeler pick-up driving stra
+
+[stalled_or_broken_down_vehicle] TR00890: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A black SUV executes an illegal left turn across the intersection, failing to yield the right-of-way
+
+[stalled_or_broken_down_vehicle] TR00892: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A red hatchback traveling from the bottom right of the frame suddenly veers off its path and collide
+
+[stalled_or_broken_down_vehicle] TR00894: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A truck with a red cab and green trailer collides head-on with a stalled, overturned truck and its s
+
+[stalled_or_broken_down_vehicle] TR00903: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A white car entering from the left of the frame and another white car entering from the bottom right
+
+[stalled_or_broken_down_vehicle] TR00904: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A silver sedan and a gray SUV engage in a violent head-on collision in the middle of an uncontrolled
+
+[stalled_or_broken_down_vehicle] TR00905: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A gray van and a black sedan collide in a severe T-bone accident at the center of the intersection. 
+
+[stalled_or_broken_down_vehicle] TR00908: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A blue truck traveling from the top to the bottom of the frame fails to stop for stationary traffic,
+
+[stalled_or_broken_down_vehicle] TR00909: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A white bus executing a left turn fails to yield to oncoming traffic, resulting in a T-bone collisio
+
+[stalled_or_broken_down_vehicle] TR00911: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A black SUV loses control while drifting and strikes a white SUV, which is then pushed into a dark g
+
+[stalled_or_broken_down_vehicle] TR00913: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A speeding black SUV collides heavily with a silver car attempting a left turn at an intersection, r
+
+[stalled_or_broken_down_vehicle] TR00914: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A black sedan attempting a left turn fails to yield the right-of-way to a white pickup truck traveli
+
+[stalled_or_broken_down_vehicle] TR00919: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A black sedan traveling at high speed violates a red traffic signal and T-bones another sedan in the
+
+[stalled_or_broken_down_vehicle] TR00920: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A red truck traveling from the top left of the frame runs a red light and enters the intersection, w
+
+[stalled_or_broken_down_vehicle] TR00921: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A white hatchback crossing the lanes fails to yield the right-of-way, resulting in a violent T-bone 
+
+[stalled_or_broken_down_vehicle] TR00922: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A white SUV navigating the roundabout collides with a black sedan traveling straight from the top of
+
+[stalled_or_broken_down_vehicle] TR00923: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A black car traveling from the left side of the frame crashes head-on into the concrete median barri
+
+[stalled_or_broken_down_vehicle] TR00926: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A car moving from the left of the frame enters the intersection and is struck by a truck moving stra
+
+[stalled_or_broken_down_vehicle] TR00934: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A white pick-up truck and a blue hatchback collide head-on in the center of the roadway. The collisi
+
+[stalled_or_broken_down_vehicle] TR00938: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A white sedan traveling straight toward a crosswalk attempts to execute a U-turn around a central ph
+
+[stalled_or_broken_down_vehicle] TR00949: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A silver SUV rear-ends a stationary white sedan stalled near the roadside barrier, causing the white
+
+[stalled_or_broken_down_vehicle] TR00952: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A white SUV and a red van engage in a violent T-bone collision in the middle of an uncontrolled inte
+
+[stalled_or_broken_down_vehicle] TR00955: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A white load-carrying truck traveling in the right lane loses control and strikes the right roadside
+
+[stalled_or_broken_down_vehicle] TR00964: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A red truck traveling straight in the third lane strikes a red motorcycle crossing from left to righ
+
+[stalled_or_broken_down_vehicle] TR00966: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A white hatchback performs a reversing maneuver in the parking lot but fails to maintain proper spat
+
+[stalled_or_broken_down_vehicle] TR00968: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A white sedan traveling in lane 4 abruptly initiates a left turn across multiple lanes of traffic, r
+
+[stalled_or_broken_down_vehicle] TR00978: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A black pickup truck collides head-on with a motorcycle at the top right of the frame. The collision
+
+[stalled_or_broken_down_vehicle] TR00985: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A white SUV traveling in Lane 2 collides with a silver sedan moving in the same direction, causing t
+
+[stalled_or_broken_down_vehicle] TR00986: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A white van traveling at high speed ignores a red light and violently rear-ends a stopped red sedan 
+
+[stalled_or_broken_down_vehicle] TR00990: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A white hatchback loses control on a wet road and crashes head-on into the median barrier, causing t
+
+[stalled_or_broken_down_vehicle] TR00992: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A black sedan slides diagonally across the road, striking a black car on its right side before colli
+
+[stalled_or_broken_down_vehicle] TR00999: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A heavy red truck traveling in the third lane sideswipes a white SUV that is attempting a lane chang
+
+[stalled_or_broken_down_vehicle] TR01003: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A white sedan traveling in lane 3 loses grip and control, causing it to veer sharply across lane 4 a
+
+[stalled_or_broken_down_vehicle] TR01004: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A white sedan enters the frame in lane 5 and suddenly loses control, resulting in a head-on collisio
+
+[stalled_or_broken_down_vehicle] TR01007: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A black truck moving straight in the second lane fails to apply its brakes and crashes into the rear
+
+[stalled_or_broken_down_vehicle] TR01012: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A silver sedan traveling straight in lane 6 suddenly veers to the left, crossing multiple lanes befo
+
+[stalled_or_broken_down_vehicle] TR01015: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A black sedan entering from the left T-bones a mini-truck as it completes a right turn at an interse
+
+[stalled_or_broken_down_vehicle] TR01022: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A white truck traveling straight through the intersection collides with the side of a red hazardous 
+
+[stalled_or_broken_down_vehicle] TR01024: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  An orange truck collides with a long red and white truck in a T-bone collision in the middle of the 
+
+[stalled_or_broken_down_vehicle] TR01025: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A black sedan illegally drives through a red light and T-bones a yellow sedan in the center of the i
+
+[stalled_or_broken_down_vehicle] TR01026: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A gray sedan traveling straight from the left collides with a white truck moving straight through th
+
+[stalled_or_broken_down_vehicle] TR01028: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A white van traveling in lane 1 on the right side of the roadway rear-ends a black car that is slowi
+
+[stalled_or_broken_down_vehicle] TR01029: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A black car initiates an unsafe lane change from the left to the right lane on the right-side roadwa
+
+[stalled_or_broken_down_vehicle] TR01033: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A motorcycle rider performs an illegal right turn and proceeds straight across the road, placing the
+
+[stalled_or_broken_down_vehicle] TR01034: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A black sedan and a motorcycle collide in a severe T-bone crash at the center of the intersection. T
+
+[stalled_or_broken_down_vehicle] TR01040: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A white hatchback loses control and collides head-on with the right-side railing, causing the vehicl
+
+[stalled_or_broken_down_vehicle] TR01042: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A sedan driving through the intersection collides directly with the traffic light poles located in t
+
+[stalled_or_broken_down_vehicle] TR01043: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A large red truck fails to decelerate and violently rear-ends a queue of stationary vehicles waiting
+
+[stalled_or_broken_down_vehicle] TR01044: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A gray sedan abruptly stops in an active travel lane without any apparent traffic justification, cau
+
+[stalled_or_broken_down_vehicle] TR01048: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A black sedan performing an illegal multi-lane crossing from the fourth to the first lane is struck 
+
+[stalled_or_broken_down_vehicle] TR02755: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A black sedan illegally drives through a red light and T-bones a yellow sedan in the center of the i
+
+[stalled_or_broken_down_vehicle] TR02765: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A white SUV traveling in Lane 2 collides with a silver sedan moving in the same direction, causing t
+
+[stalled_or_broken_down_vehicle] TR02775: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A white truck traveling straight through the intersection collides with the side of a red hazardous 
+
+[stalled_or_broken_down_vehicle] TR02784: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A red truck traveling straight in the middle lane of the highway attempts a sudden evasive turn to a
+
+[stalled_or_broken_down_vehicle] TR02793: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A golden hatchback traveling straight from the right side of the frame suffers a T-bone collision wi
+
+[stalled_or_broken_down_vehicle] TR02801: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A white SUV traveling straight in the fifth lane crashes into the rear of a white sedan that is in t
+
+[stalled_or_broken_down_vehicle] TR02809: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A large red truck fails to decelerate and violently rear-ends a queue of stationary vehicles waiting
+
+[stalled_or_broken_down_vehicle] TR02817: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A black hatchback enters from the bottom right of the frame and crashes into multiple pedestrians, s
+
+[stalled_or_broken_down_vehicle] TR02825: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A white coupe and a large truck collide in a severe T-bone collision in the middle of the intersecti
+
+[stalled_or_broken_down_vehicle] TR02832: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A white truck traveling at an excessive speed enters the intersection and collides with a white hatc
+
+[stalled_or_broken_down_vehicle] TR02839: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A silver SUV rear-ends a stationary white sedan stalled near the roadside barrier, causing the white
+
+[stalled_or_broken_down_vehicle] TR02846: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A white load-carrying truck traveling in the right lane loses control and strikes the right roadside
+
+[stalled_or_broken_down_vehicle] TR02860: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A black car initiates an unsafe lane change from the left to the right lane on the right-side roadwa
+
+[stalled_or_broken_down_vehicle] TR02867: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A white bus executing a left turn fails to yield to oncoming traffic, resulting in a T-bone collisio
+
+[stalled_or_broken_down_vehicle] TR02874: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A scooter carrying two riders executes a sudden right turn across the roadway without using an indic
+
+[stalled_or_broken_down_vehicle] TR02881: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A white hatchback performs a reversing maneuver in the parking lot but fails to maintain proper spat
+
+[stalled_or_broken_down_vehicle] TR02888: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A truck with a red cab and green trailer collides head-on with a stalled, overturned truck and its s
+
+[stalled_or_broken_down_vehicle] TR02895: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A black sedan slides diagonally across the road, striking a black car on its right side before colli
+
+[stalled_or_broken_down_vehicle] TR02901: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A black car traveling from the left side of the frame crashes head-on into the concrete median barri
+
+[stalled_or_broken_down_vehicle] TR02907: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A white van traveling at speed in the wrong direction collides with a gray SUV that is attempting a 
+
+[stalled_or_broken_down_vehicle] TR02913: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A heavy black truck traveling straight in lane 3 collides violently with the rear end of a black SUV
+
+[stalled_or_broken_down_vehicle] TR02919: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A black sedan entering from the left T-bones a mini-truck as it completes a right turn at an interse
+
+[stalled_or_broken_down_vehicle] TR02925: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A maroon sedan moving straight from the bottom of the frame collides with a gray sedan crossing the 
+
+[stalled_or_broken_down_vehicle] TR02931: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A black sedan traveling in lane 5 collides in a severe rear-end collision with a silver van that is 
+
+[stalled_or_broken_down_vehicle] TR02937: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A speeding black SUV collides heavily with a silver car attempting a left turn at an intersection, r
+
+[stalled_or_broken_down_vehicle] TR02943: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A silver SUV traveling straight in the leftmost lane of a one-way street suffers a T-bone collision 
+
+[stalled_or_broken_down_vehicle] TR02949: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A white sedan enters the frame in lane 5 and suddenly loses control, resulting in a head-on collisio
+
+[stalled_or_broken_down_vehicle] TR02955: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A heavy red truck traveling in the third lane sideswipes a white SUV that is attempting a lane chang
+
+[stalled_or_broken_down_vehicle] TR02961: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A white sedan traveling straight toward a crosswalk attempts to execute a U-turn around a central ph
+
+[stalled_or_broken_down_vehicle] TR02967: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A silver SUV traveling at high speed from the left strikes a blue three-wheeler pick-up driving stra
+
+[stalled_or_broken_down_vehicle] TR02973: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  An orange truck collides with a long red and white truck in a T-bone collision in the middle of the 
+
+[stalled_or_broken_down_vehicle] TR02979: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A black sedan traveling at high speed violates a red traffic signal and T-bones another sedan in the
+
+[stalled_or_broken_down_vehicle] TR02985: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A blue truck traveling from the top to the bottom of the frame fails to stop for stationary traffic,
+
+[stalled_or_broken_down_vehicle] TR02991: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A black sedan and a motorcycle collide in a severe T-bone crash at the center of the intersection. T
+
+[stalled_or_broken_down_vehicle] TR02997: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A three-wheeler executes an erratic diagonal lane change from the eighth lane toward the fifth lane,
+
+[stalled_or_broken_down_vehicle] TR03003: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A white sedan traveling in lane 3 loses grip and control, causing it to veer sharply across lane 4 a
+
+[stalled_or_broken_down_vehicle] TR03009: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A white sedan traveling in lane 4 abruptly initiates a left turn across multiple lanes of traffic, r
+
+[stalled_or_broken_down_vehicle] TR03015: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A white pick-up truck and a blue hatchback collide head-on in the center of the roadway. The collisi
+
+[stalled_or_broken_down_vehicle] TR03021: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A black sedan traveling straight through the intersection collides with a black hatchback that illeg
+
+[stalled_or_broken_down_vehicle] TR03027: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A black sedan traveling from the left collides violently with a silver van crossing the intersection
+
+[stalled_or_broken_down_vehicle] TR03033: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A white SUV navigating the roundabout collides with a black sedan traveling straight from the top of
+
+[stalled_or_broken_down_vehicle] TR03045: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A red hatchback traveling from the bottom right of the frame suddenly veers off its path and collide
+
+[stalled_or_broken_down_vehicle] TR03051: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A white hatchback loses control and collides head-on with the right-side railing, causing the vehicl
+
+[stalled_or_broken_down_vehicle] TR03057: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A white van traveling in lane 1 on the right side of the roadway rear-ends a black car that is slowi
+
+[stalled_or_broken_down_vehicle] TR03063: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A white van traveling at high speed ignores a red light and violently rear-ends a stopped red sedan 
+
+[stalled_or_broken_down_vehicle] TR03069: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A gray sedan abruptly stops in an active travel lane without any apparent traffic justification, cau
+
+[stalled_or_broken_down_vehicle] TR03075: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A black SUV executes an illegal left turn across the intersection, failing to yield the right-of-way
+
+[stalled_or_broken_down_vehicle] TR03081: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A white hatchback loses control on a wet road and crashes head-on into the median barrier, causing t
+
+[stalled_or_broken_down_vehicle] TR03087: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A sedan driving through the intersection collides directly with the traffic light poles located in t
+
+[stalled_or_broken_down_vehicle] TR03093: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A heavily loaded brown truck illegally drives through a red traffic light, triggering a sequence of 
+
+[stalled_or_broken_down_vehicle] TR03099: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A white hatchback crossing the lanes fails to yield the right-of-way, resulting in a violent T-bone 
+
+[stalled_or_broken_down_vehicle] TR03105: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A gray sedan traveling straight from the left collides with a white truck moving straight through th
+
+[stalled_or_broken_down_vehicle] TR03111: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A black sedan attempting a left turn fails to yield the right-of-way to a white pickup truck traveli
+
+[stalled_or_broken_down_vehicle] TR03117: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A red truck traveling from the top left of the frame runs a red light and enters the intersection, w
+
+[stalled_or_broken_down_vehicle] TR03123: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A motorcycle rider performs an illegal right turn and proceeds straight across the road, placing the
+
+[stalled_or_broken_down_vehicle] TR03129: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A car moving from the left of the frame enters the intersection and is struck by a truck moving stra
+
+[stalled_or_broken_down_vehicle] TR03135: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A black sedan performing an illegal multi-lane crossing from the fourth to the first lane is struck 
+
+[stalled_or_broken_down_vehicle] TR03141: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A red truck traveling straight in the third lane strikes a red motorcycle crossing from left to righ
+
+[stalled_or_broken_down_vehicle] TR03147: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A motorcycle rider wearing a white dress loses control and falls to the ground after a collision wit
+
+[stalled_or_broken_down_vehicle] TR03153: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A silver sedan and a gray SUV engage in a violent head-on collision in the middle of an uncontrolled
+
+[stalled_or_broken_down_vehicle] TR03159: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A gray van and a black sedan collide in a severe T-bone accident at the center of the intersection. 
+
+[stalled_or_broken_down_vehicle] TR03165: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A gray sedan executing a left turn at the intersection fails to yield the right-of-way and collides 
+
+[stalled_or_broken_down_vehicle] TR03171: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A white SUV and a red van engage in a violent T-bone collision in the middle of an uncontrolled inte
+
+[stalled_or_broken_down_vehicle] TR03177: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A black pickup truck collides head-on with a motorcycle at the top right of the frame. The collision
+
+[stalled_or_broken_down_vehicle] TR03183: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A black SUV loses control while drifting and strikes a white SUV, which is then pushed into a dark g
+
+[stalled_or_broken_down_vehicle] TR03189: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A gray SUV loses control on a slippery, snow-covered curved roadway, resulting in a series of three 
+
+[stalled_or_broken_down_vehicle] TR03195: stalled_or_broken_down_vehicle -> traffic_accident (high)
+  A silver sedan traveling straight in lane 6 suddenly veers to the left, crossing multiple lanes befo
+
+[traffic_congestion] TR00775: traffic_congestion -> traffic_accident (high)
+  A blue truck traveling at a high rate of speed fails to stop for congested traffic, initiating a mas
+
+[traffic_congestion] TR02802: traffic_congestion -> traffic_accident (high)
+  A multi-vehicle chain-reaction collision occurs in the fifth lane from the left. An orange SUV fails
+
+[traffic_congestion] TR02889: traffic_congestion -> traffic_accident (high)
+  A blue truck traveling at a high rate of speed fails to stop for congested traffic, initiating a mas
+
+[vehicle_blocking_traffic] TR00103: vehicle_blocking_traffic -> traffic_accident (high)
+  A white SUV traveling from the top of the frame collides violently into the rear of a stationary hea
+
+[vehicle_blocking_traffic] TR00104: vehicle_blocking_traffic -> traffic_accident (high)
+  A red truck driving from the bottom right road enters the intersection and strikes the side of a gre
+
+[vehicle_blocking_traffic] TR00105: vehicle_blocking_traffic -> normal (medium)
+  A black car travels straight along a multi-lane divided highway, moving from the bottom of the frame
+
+[vehicle_blocking_traffic] TR00106: vehicle_blocking_traffic -> normal (medium)
+  A white sedan travels straight along the multi-lane city road, moving from the bottom right of the f
+
+[vehicle_blocking_traffic] TR00108: vehicle_blocking_traffic -> traffic_accident (high)
+  A white pickup truck entering the intersection from the left collides broadside with a gray sedan th
+
+[vehicle_blocking_traffic] TR00115: vehicle_blocking_traffic -> traffic_accident (high)
+  A green truck carrying a heavy shipping container attempts a left turn but cuts the corner too sharp
+
+[vehicle_blocking_traffic] TR00116: vehicle_blocking_traffic -> traffic_accident (high)
+  A white SUV traveling from the top-left of the frame loses control and skids across the roadway, lea
+
+[vehicle_blocking_traffic] TR00117: vehicle_blocking_traffic -> traffic_accident (high)
+  A black sedan traveling straight from the top of the frame fails to yield and enters the intersectio
+
+[vehicle_blocking_traffic] TR00118: vehicle_blocking_traffic -> normal (medium)
+  A motorcycle traveling on the right side of the road executes a passing maneuver by overtaking a dar
+
+[vehicle_blocking_traffic] TR00119: vehicle_blocking_traffic -> normal (medium)
+  A white car travels straight through the middle lane of the underpass, maintaining a consistent spee
+
+[vehicle_blocking_traffic] TR00121: vehicle_blocking_traffic -> traffic_accident (high)
+  A white bus performing a wide right turn encroaches into the path of a white SUV traveling straight 
+
+[vehicle_blocking_traffic] TR00122: vehicle_blocking_traffic -> normal (medium)
+  A black car enters the frame in the right lane and drives steadily toward the camera, maintaining a 
+
+[vehicle_blocking_traffic] TR00124: vehicle_blocking_traffic -> normal (medium)
+  A white van enters the frame in the left lane and drives straight towards the camera, maintaining a 
+
+[vehicle_blocking_traffic] TR00125: vehicle_blocking_traffic -> normal (medium)
+  A white car travels straight along the right side of the road, moving away from the camera at a stea
+
+[vehicle_blocking_traffic] TR00127: vehicle_blocking_traffic -> traffic_accident (high)
+  Two large trucks traveling in lane 3 collide head-on, causing both vehicles to flip over and stall a
+
+[vehicle_blocking_traffic] TR00128: vehicle_blocking_traffic -> traffic_accident (high)
+  A black sedan initiates a left turn across an intersection, failing to yield the right-of-way to ano
+
+[vehicle_blocking_traffic] TR00129: vehicle_blocking_traffic -> traffic_accident (high)
+  A severe traffic collision has left a white car overturned on the sidewalk and a white motorcycle ly
+
+[vehicle_blocking_traffic] TR00131: vehicle_blocking_traffic -> traffic_accident (high)
+  A yellow sedan loses control on a wet road and crashes into the rear of a parked black sedan, causin
+
+[vehicle_blocking_traffic] TR00133: vehicle_blocking_traffic -> normal (medium)
+  A white car enters the frame from the distance on the left side of the road and maintains a steady, 
+
+[vehicle_blocking_traffic] TR00135: vehicle_blocking_traffic -> traffic_accident (high)
+  A red sedan commits a severe traffic violation by running a red light, driving straight from the bot
+
+[vehicle_blocking_traffic] TR00136: vehicle_blocking_traffic -> normal (medium)
+  A yellow car travels straight through the frame, maintaining a steady pace and staying within its de
+
+[vehicle_blocking_traffic] TR00137: vehicle_blocking_traffic -> traffic_accident (high)
+  A dark sedan traveling toward the camera fails to stop and collides with the rear driver's side of a
+
+[vehicle_blocking_traffic] TR00138: vehicle_blocking_traffic -> traffic_congestion (medium)
+  A motorcycle and several passenger cars travel straight through the left and middle lanes, maintaini
+
+[vehicle_blocking_traffic] TR00139: vehicle_blocking_traffic -> traffic_accident (high)
+  A white van begins driving erratically in a zig-zag pattern across the right carriageway, veering sh
+
+[vehicle_blocking_traffic] TR00140: vehicle_blocking_traffic -> traffic_accident (high)
+  A silver sedan and a blue and white bus converge in a bustling city intersection and collide in a T-
+
+[vehicle_blocking_traffic] TR00142: vehicle_blocking_traffic -> traffic_accident (high)
+  A silver sedan pulls from a crossroad into the path of a red truck traveling straight on the main ro
+
+[vehicle_blocking_traffic] TR00145: vehicle_blocking_traffic -> normal (medium)
+  A white car travels straight along the right side of the road, moving away from the camera at a stea
+
+[vehicle_blocking_traffic] TR00146: vehicle_blocking_traffic -> normal (medium)
+  A white car continues to drive straight along the right side of the road, maintaining a consistent s
+
+[vehicle_blocking_traffic] TR00149: vehicle_blocking_traffic -> traffic_accident (high)
+  A golden sedan traveling straight from the bottom of the frame and a gray sedan moving straight from
+
+[vehicle_blocking_traffic] TR00150: vehicle_blocking_traffic -> normal (medium)
+  A black car and a motorcycle enter the frame from the bottom right and travel straight away from the
+
+[vehicle_blocking_traffic] TR00152: vehicle_blocking_traffic -> normal (medium)
+  A black car on the right side of the road travels straight through the frame at a constant highway s
+
+[vehicle_blocking_traffic] TR00153: vehicle_blocking_traffic -> traffic_accident (high)
+  A white sedan collides with the green guardrails on the right side of the roadway, causing the vehic
+
+[vehicle_blocking_traffic] TR00154: vehicle_blocking_traffic -> traffic_accident (high)
+  A white truck traveling at a high rate of speed enters the intersection and swerves sharply to avoid
+
+[vehicle_blocking_traffic] TR00155: vehicle_blocking_traffic -> traffic_accident (high)
+  A white van traveling in Lane 2 loses control, swerving into Lane 1 before making a sharp turn acros
+
+[vehicle_blocking_traffic] TR00158: vehicle_blocking_traffic -> traffic_accident (high)
+  A white truck loses control and crashes violently into the tunnel wall, causing it to overturn on it
+
+[vehicle_blocking_traffic] TR00161: vehicle_blocking_traffic -> normal (medium)
+  A red car and a silver car travel straight along the left carriageway of the highway, maintaining a 
+
+[vehicle_blocking_traffic] TR00162: vehicle_blocking_traffic -> normal (medium)
+  A police car with its blue emergency lights activated travels straight toward the camera in the righ
+
+[vehicle_blocking_traffic] TR00163: vehicle_blocking_traffic -> normal (medium)
+  A white car and a white truck travel steadily away from the camera in the middle and right lanes of 
+
+[vehicle_blocking_traffic] TR00164: vehicle_blocking_traffic -> normal (medium)
+  A black sedan travels straight through the middle lane, maintaining a consistent speed and a safe fo
+
+[vehicle_blocking_traffic] TR00167: vehicle_blocking_traffic -> normal (medium)
+  A black car travels straight through the underpass from bottom to top, maintaining a steady pace and
+
+[vehicle_blocking_traffic] TR00168: vehicle_blocking_traffic -> traffic_accident (high)
+  A large truck enters the intersection at a high rate of speed and fails to stop for the red light, v
+
+[vehicle_blocking_traffic] TR00171: vehicle_blocking_traffic -> normal (medium)
+  A black truck travels straight along the right carriageway, maintaining a steady speed and a consist
+
+[vehicle_blocking_traffic] TR00172: vehicle_blocking_traffic -> traffic_accident (high)
+  A black sedan entering from the left fails to yield the right-of-way and enters the intersection aga
+
+[vehicle_blocking_traffic] TR00174: vehicle_blocking_traffic -> traffic_accident (high)
+  A black sedan traveling at high speed strikes a white hatchback in a severe T-bone collision at the 
+
+[vehicle_blocking_traffic] TR00175: vehicle_blocking_traffic -> normal (medium)
+  A yellow car travels straight along the left side of the highway, maintaining a steady speed and sta
+
+[vehicle_blocking_traffic] TR00176: vehicle_blocking_traffic -> traffic_accident (high)
+  A black sedan traveling in lane 3 strikes an animal crossing the highway and comes to an abrupt halt
+
+[vehicle_blocking_traffic] TR00177: vehicle_blocking_traffic -> normal (medium)
+  A yellow taxi travels straight toward the camera in the left lanes of a multi-lane underpass, mainta
+
+[vehicle_blocking_traffic] TR00178: vehicle_blocking_traffic -> normal (medium)
+  A motorcycle enters the right lane traveling away from the camera and maintains a steady, straight c
+
+[vehicle_blocking_traffic] TR02760: vehicle_blocking_traffic -> normal (medium)
+  A white van enters the frame in the left lane and drives straight towards the camera, maintaining a 
+
+[vehicle_blocking_traffic] TR02789: vehicle_blocking_traffic -> traffic_accident (high)
+  A dark sedan traveling toward the camera fails to stop and collides with the rear driver's side of a
+
+[vehicle_blocking_traffic] TR02797: vehicle_blocking_traffic -> normal (medium)
+  A black sedan travels straight through the middle lane, maintaining a consistent speed and a safe fo
+
+[vehicle_blocking_traffic] TR02805: vehicle_blocking_traffic -> traffic_accident (high)
+  A black sedan initiates a left turn across an intersection, failing to yield the right-of-way to ano
+
+[vehicle_blocking_traffic] TR02821: vehicle_blocking_traffic -> normal (medium)
+  A white car travels straight along the right side of the road, moving away from the camera at a stea
+
+[vehicle_blocking_traffic] TR02829: vehicle_blocking_traffic -> traffic_accident (high)
+  A white bus performing a wide right turn encroaches into the path of a white SUV traveling straight 
+
+[vehicle_blocking_traffic] TR02850: vehicle_blocking_traffic -> traffic_accident (high)
+  A white truck loses control and crashes violently into the tunnel wall, causing it to overturn on it
+
+[vehicle_blocking_traffic] TR02871: vehicle_blocking_traffic -> normal (medium)
+  A police car with its blue emergency lights activated travels straight toward the camera in the righ
+
+[vehicle_blocking_traffic] TR02878: vehicle_blocking_traffic -> traffic_accident (high)
+  Two large trucks traveling in lane 3 collide head-on, causing both vehicles to flip over and stall a
+
+[vehicle_blocking_traffic] TR02892: vehicle_blocking_traffic -> traffic_accident (high)
+  A white SUV traveling from the top of the frame collides violently into the rear of a stationary hea
+
+[vehicle_blocking_traffic] TR02898: vehicle_blocking_traffic -> normal (medium)
+  A black car travels straight along a multi-lane divided highway, moving from the bottom of the frame
+
+[vehicle_blocking_traffic] TR02904: vehicle_blocking_traffic -> normal (medium)
+  A white sedan travels straight along the multi-lane city road, moving from the bottom right of the f
+
+[vehicle_blocking_traffic] TR02910: vehicle_blocking_traffic -> normal (medium)
+  A white car travels straight along the right side of the road, moving away from the camera at a stea
+
+[vehicle_blocking_traffic] TR02916: vehicle_blocking_traffic -> normal (medium)
+  A black truck travels straight along the right carriageway, maintaining a steady speed and a consist
+
+[vehicle_blocking_traffic] TR02922: vehicle_blocking_traffic -> normal (medium)
+  A black car travels straight through the underpass from bottom to top, maintaining a steady pace and
+
+[vehicle_blocking_traffic] TR02934: vehicle_blocking_traffic -> traffic_accident (high)
+  A silver sedan and a blue and white bus converge in a bustling city intersection and collide in a T-
+
+[vehicle_blocking_traffic] TR02940: vehicle_blocking_traffic -> traffic_accident (high)
+  A white truck traveling at a high rate of speed enters the intersection and swerves sharply to avoid
+
+[vehicle_blocking_traffic] TR02946: vehicle_blocking_traffic -> traffic_accident (high)
+  A red truck driving from the bottom right road enters the intersection and strikes the side of a gre
+
+[vehicle_blocking_traffic] TR02952: vehicle_blocking_traffic -> traffic_accident (high)
+  A black sedan entering from the left fails to yield the right-of-way and enters the intersection aga
+
+[vehicle_blocking_traffic] TR02958: vehicle_blocking_traffic -> normal (medium)
+  A black car on the right side of the road travels straight through the frame at a constant highway s
+
+[vehicle_blocking_traffic] TR02964: vehicle_blocking_traffic -> traffic_accident (high)
+  A white sedan collides with the green guardrails on the right side of the roadway, causing the vehic
+
+[vehicle_blocking_traffic] TR02970: vehicle_blocking_traffic -> traffic_accident (high)
+  A green truck carrying a heavy shipping container attempts a left turn but cuts the corner too sharp
+
+[vehicle_blocking_traffic] TR02976: vehicle_blocking_traffic -> traffic_congestion (medium)
+  A motorcycle and several passenger cars travel straight through the left and middle lanes, maintaini
+
+[vehicle_blocking_traffic] TR03000: vehicle_blocking_traffic -> traffic_accident (high)
+  A black sedan traveling in lane 3 strikes an animal crossing the highway and comes to an abrupt halt
+
+[vehicle_blocking_traffic] TR03006: vehicle_blocking_traffic -> normal (medium)
+  A black car and a motorcycle enter the frame from the bottom right and travel straight away from the
+
+[vehicle_blocking_traffic] TR03012: vehicle_blocking_traffic -> traffic_accident (high)
+  A large truck enters the intersection at a high rate of speed and fails to stop for the red light, v
+
+[vehicle_blocking_traffic] TR03018: vehicle_blocking_traffic -> traffic_accident (high)
+  A black sedan traveling straight from the top of the frame fails to yield and enters the intersectio
+
+[vehicle_blocking_traffic] TR03024: vehicle_blocking_traffic -> traffic_accident (high)
+  A white van begins driving erratically in a zig-zag pattern across the right carriageway, veering sh
+
+[vehicle_blocking_traffic] TR03042: vehicle_blocking_traffic -> traffic_accident (high)
+  A white SUV traveling from the top-left of the frame loses control and skids across the roadway, lea
+
+[vehicle_blocking_traffic] TR03048: vehicle_blocking_traffic -> normal (medium)
+  A red car and a silver car travel straight along the left carriageway of the highway, maintaining a 
+
+[vehicle_blocking_traffic] TR03054: vehicle_blocking_traffic -> traffic_accident (high)
+  A golden sedan traveling straight from the bottom of the frame and a gray sedan moving straight from
+
+[vehicle_blocking_traffic] TR03060: vehicle_blocking_traffic -> traffic_accident (high)
+  A white van traveling in Lane 2 loses control, swerving into Lane 1 before making a sharp turn acros
+
+[vehicle_blocking_traffic] TR03066: vehicle_blocking_traffic -> normal (medium)
+  A yellow taxi travels straight toward the camera in the left lanes of a multi-lane underpass, mainta
+
+[vehicle_blocking_traffic] TR03078: vehicle_blocking_traffic -> normal (medium)
+  A white van travels straight from left to right along the elevated upper roadway, moving at a consis
+
+[vehicle_blocking_traffic] TR03090: vehicle_blocking_traffic -> normal (medium)
+  A yellow car travels straight along the left side of the highway, maintaining a steady speed and sta
+
+[vehicle_blocking_traffic] TR03096: vehicle_blocking_traffic -> normal (medium)
+  A white car continues to drive straight along the right side of the road, maintaining a consistent s
+
+[vehicle_blocking_traffic] TR03102: vehicle_blocking_traffic -> traffic_accident (high)
+  A black sedan traveling at high speed strikes a white hatchback in a severe T-bone collision at the 
+
+[vehicle_blocking_traffic] TR03120: vehicle_blocking_traffic -> traffic_accident (high)
+  A white pickup truck entering the intersection from the left collides broadside with a gray sedan th
+
+[vehicle_blocking_traffic] TR03144: vehicle_blocking_traffic -> normal (medium)
+  A white car enters the frame from the distance on the left side of the road and maintains a steady, 
+
+[vehicle_blocking_traffic] TR03162: vehicle_blocking_traffic -> normal (medium)
+  A white car and a white truck travel steadily away from the camera in the middle and right lanes of 
+
+[vehicle_blocking_traffic] TR03168: vehicle_blocking_traffic -> traffic_accident (high)
+  A severe traffic collision has left a white car overturned on the sidewalk and a white motorcycle ly
+
+[vehicle_blocking_traffic] TR03174: vehicle_blocking_traffic -> normal (medium)
+  A black car enters the frame in the right lane and drives steadily toward the camera, maintaining a 
+
+[vehicle_blocking_traffic] TR03180: vehicle_blocking_traffic -> normal (medium)
+  A white car travels straight through the middle lane of the underpass, maintaining a consistent spee
+
+[vehicle_blocking_traffic] TR03192: vehicle_blocking_traffic -> traffic_accident (high)
+  A brown truck traveling in lane 3 rear-ends a black sedan that has stalled in the middle of the road
+
+[vehicle_blocking_traffic] TR03208: vehicle_blocking_traffic -> traffic_accident (high)
+  A black SUV executes a sudden and unsafe leftward maneuver, crossing directly into the path of an on
+
+[vehicle_blocking_traffic] TR03213: vehicle_blocking_traffic -> normal (medium)
+  A yellow car travels straight through the frame, maintaining a steady pace and staying within its de
+
+[vehicle_blocking_traffic] TR03218: vehicle_blocking_traffic -> normal (medium)
+  A motorcycle traveling on the right side of the road executes a passing maneuver by overtaking a dar
+
+[wrong_way_driving] TR00001: wrong_way_driving -> normal (medium)
+  A motorcycle with a rider dressed in black enters the frame from the bottom and travels straight tow
+
+[wrong_way_driving] TR00002: wrong_way_driving -> normal (medium)
+  A red car in the middle lane and a white truck with a red stripe in the rightmost lane both drive aw
+
+[wrong_way_driving] TR00004: wrong_way_driving -> normal (medium)
+  A dark grey sedan and a silver SUV travel forward in the lanes closest to the camera, while a white 
+
+[wrong_way_driving] TR00005: wrong_way_driving -> traffic_congestion (medium)
+  A black SUV travels straight within the congested oncoming lanes of a divided highway, maintaining a
+
+[wrong_way_driving] TR00006: wrong_way_driving -> normal (medium)
+  A red SUV in the leftmost lane and a white car in the rightmost lane both travel straight at steady 
+
+[wrong_way_driving] TR00009: wrong_way_driving -> normal (medium)
+  A red car, a white car, and a white SUV travel straight along the left side of the divided highway, 
+
+[wrong_way_driving] TR00010: wrong_way_driving -> traffic_congestion (medium)
+  Traffic flows in opposite directions on a multi-lane highway at night, where vehicles moving toward 
+
+[wrong_way_driving] TR00011: wrong_way_driving -> traffic_accident (high)
+  A black SUV traveling the wrong way in lane 7 collides head-on with a white truck moving in the corr
+
+[wrong_way_driving] TR00013: wrong_way_driving -> traffic_congestion (medium)
+  Several heavy-duty vehicles are traveling in opposite directions on a divided highway. On the left c
+
+[wrong_way_driving] TR00014: wrong_way_driving -> traffic_accident (high)
+  A black sedan traveling on a wet, curved road loses traction and spins out of control, sliding into 
+
+[wrong_way_driving] TR00016: wrong_way_driving -> normal (medium)
+  A white box truck travels steadily away from the camera while a flatbed truck moves in the opposite 
+
+[wrong_way_driving] TR00017: wrong_way_driving -> normal (medium)
+  A red car, a grey SUV, and a white car travel straight in their respective lanes on the left side of
+
+[wrong_way_driving] TR00018: wrong_way_driving -> traffic_accident (high)
+  A black SUV drives in the wrong direction in lane 4, leading to two consecutive head-on collisions. 
+
+[wrong_way_driving] TR00019: wrong_way_driving -> normal (medium)
+  A dark car travels from the bottom left toward the top right of the frame while a white car and anot
+
+[wrong_way_driving] TR00020: wrong_way_driving -> normal (medium)
+  A white car traveling from the bottom left proceeds straight through the intersection, while a black
+
+[wrong_way_driving] TR00021: wrong_way_driving -> normal (medium)
+  A green truck entering from the left executes a left turn to head toward the top of the frame, while
+
+[wrong_way_driving] TR00022: wrong_way_driving -> normal (medium)
+  A white SUV, a white pickup truck, and a red pickup truck travel straight in their respective lanes 
+
+[wrong_way_driving] TR00023: wrong_way_driving -> traffic_accident (high)
+  A white sedan veers across the double solid yellow line into oncoming traffic, resulting in a violen
+
+[wrong_way_driving] TR00024: wrong_way_driving -> traffic_accident (high)
+  A silver van traveling from the top to the bottom of a rural road loses control due to excessive spe
+
+[wrong_way_driving] TR00025: wrong_way_driving -> traffic_accident (high)
+  A silver sedan collides head-on with an oncoming motorcycle ridden by a person in a red outfit. The 
+
+[wrong_way_driving] TR00026: wrong_way_driving -> traffic_accident (high)
+  A white sedan drives off its designated lane while crossing an intersection, leading to a sequence o
+
+[wrong_way_driving] TR00027: wrong_way_driving -> traffic_congestion (medium)
+  A white van enters the middle lane and travels straight away from the camera, maintaining a steady s
+
+[wrong_way_driving] TR00029: wrong_way_driving -> normal (medium)
+  Two motorcycles travel simultaneously in opposite directions on a well-lit multi-lane road, with one
+
+[wrong_way_driving] TR00033: wrong_way_driving -> normal (medium)
+  A white car, a black car, and a yellow car that were previously stationary begin to move forward int
+
+[wrong_way_driving] TR00035: wrong_way_driving -> traffic_accident (high)
+  A white hatchback performs an illegal right turn by crossing the solid double yellow lines at an int
+
+[wrong_way_driving] TR00037: wrong_way_driving -> normal (medium)
+  A steady stream of light traffic moves in opposite directions on a multi-lane urban road, with a bla
+
+[wrong_way_driving] TR00043: wrong_way_driving -> normal (medium)
+  A white SUV in the rightmost lane and a red pickup truck in the adjacent lane travel straight, while
+
+[wrong_way_driving] TR00044: wrong_way_driving -> normal (medium)
+  A yellow car travels straight on the right side of the road, while a red car, a white car, and a mot
+
+[wrong_way_driving] TR00046: wrong_way_driving -> traffic_accident (high)
+  A white sedan traveling toward the top of the frame collides head-on with a black motorcycle moving 
+
+[wrong_way_driving] TR00049: wrong_way_driving -> normal (medium)
+  A black car travels straight through the right lane descending the winding road while a white car mo
+
+[wrong_way_driving] TR00051: wrong_way_driving -> traffic_congestion (medium)
+  In the initial segment of the video, vehicles travel in opposite directions on a divided highway, il
+
+[wrong_way_driving] TR00052: wrong_way_driving -> normal (medium)
+  A black SUV in the left lane and a white car in the middle lane of the left carriageway travel strai
+
+[wrong_way_driving] TR00055: wrong_way_driving -> traffic_accident (high)
+  A motorcycle traveling wrong-way from the top of the frame collides with a black SUV entering from t
+
+[wrong_way_driving] TR00056: wrong_way_driving -> normal (medium)
+  A white sedan travels straight along the left side of the divided road while two dark vehicles move 
+
+[wrong_way_driving] TR00057: wrong_way_driving -> traffic_accident (high)
+  A black sedan traveling straight in lane 3 collides in a severe T-bone fashion with a motorcycle rid
+
+[wrong_way_driving] TR00058: wrong_way_driving -> normal (medium)
+  A red car travels straight through the right lanes from the bottom to the top of the frame, while a 
+
+[wrong_way_driving] TR00059: wrong_way_driving -> normal (medium)
+  A white car, a black car, and a blue bus travel straight in the left, middle, and right lanes respec
+
+[wrong_way_driving] TR00060: wrong_way_driving -> traffic_accident (high)
+  A white sedan traveling in the correct direction collides head-on with a motorcycle that is travelin
+
+[wrong_way_driving] TR00061: wrong_way_driving -> traffic_accident (high)
+  A motorcycle rider travels the wrong way across multiple lanes of traffic from right to left, forcin
+
+[wrong_way_driving] TR00063: wrong_way_driving -> traffic_accident (high)
+  A red truck travels the wrong way in Lane 1 of a highway, leading to a violent head-on collision wit
+
+[wrong_way_driving] TR00064: wrong_way_driving -> normal (medium)
+  A white van, a black SUV, and a white SUV travel straight along the left side of the highway, moving
+
+[wrong_way_driving] TR00065: wrong_way_driving -> normal (medium)
+  A yellow taxi and a motorcycle travel forward through the left lanes of the urban road, while a dark
+
+[wrong_way_driving] TR00066: wrong_way_driving -> normal (medium)
+  A steady flow of traffic moves through the underpass, with a white car and a silver car among severa
+
+[wrong_way_driving] TR00067: wrong_way_driving -> normal (medium)
+  A yellow taxi travels straight towards the camera in the right lane, while a motorcycle follows behi
+
+[wrong_way_driving] TR00068: wrong_way_driving -> traffic_congestion (medium)
+  On a divided highway, traffic continues to move in opposite directions with a stark contrast in flow
+
+[wrong_way_driving] TR00069: wrong_way_driving -> normal (medium)
+  A yellow car, a white car, and a motorcycle travel straight along the left side of the divided road,
+
+[wrong_way_driving] TR00071: wrong_way_driving -> traffic_accident (high)
+  A white SUV traveling in the second lane collides with orange spring posts at the center of the road
+
+[wrong_way_driving] TR00072: wrong_way_driving -> vehicle_blocking_traffic (medium)
+  A yellow car and a white car travel straight along the left carriageway from the top left toward the
+
+[wrong_way_driving] TR00074: wrong_way_driving -> vehicle_blocking_traffic (medium)
+  A group of vehicles, including a motorcycle, a white car, a dark car, and a yellow car, travel strai
+
+[wrong_way_driving] TR00075: wrong_way_driving -> vehicle_blocking_traffic (medium)
+  A white car on the left side of the road and a black car on the right side of the road travel straig
+
+[wrong_way_driving] TR00076: wrong_way_driving -> vehicle_blocking_traffic (medium)
+  A red car travels straight from right to left along the foreground road, maintaining a steady pace a
+
+[wrong_way_driving] TR00077: wrong_way_driving -> normal (medium)
+  A silver car travels straight from the top to the bottom of the frame on the right side of the divid
+
+[wrong_way_driving] TR00078: wrong_way_driving -> normal (medium)
+  A yellow car traveling from the top of the frame towards the bottom and a white car traveling from t
+
+[wrong_way_driving] TR00079: wrong_way_driving -> normal (medium)
+  A red truck, a white car, and a white van travel straight in the left carriageway across three paral
+
+[wrong_way_driving] TR00080: wrong_way_driving -> normal (medium)
+  A high volume of multi-lane highway traffic maintains a steady, continuous flow in both directions, 
+
+[wrong_way_driving] TR00084: wrong_way_driving -> traffic_accident (high)
+  A white van turning left at the intersection collides head-on with a motorcycle traveling straight f
+
+[wrong_way_driving] TR00085: wrong_way_driving -> normal (medium)
+  A high-speed motorcycle in the oncoming lanes passes directly beneath the camera, immediately follow
+
+[wrong_way_driving] TR00086: wrong_way_driving -> traffic_accident (high)
+  Two white SUVs engage in a severe head-on collision at the center of the frame. The accident occurs 
+
+[wrong_way_driving] TR00087: wrong_way_driving -> normal (medium)
+  A white car and a black car travel straight in the leftward lanes while another black car drives str
+
+[wrong_way_driving] TR00088: wrong_way_driving -> traffic_congestion (medium)
+  On the left side of the highway, a white car, a black SUV, a black pickup truck, and another black S
+
+[wrong_way_driving] TR00089: wrong_way_driving -> normal (medium)
+  A red car and a black car travel along the right side of the highway, while a white van and a white 
+
+[wrong_way_driving] TR00090: wrong_way_driving -> traffic_accident (high)
+  A red vehicle carrying two passengers enters the scene driving in the wrong direction and crashes di
+
+[wrong_way_driving] TR00091: wrong_way_driving -> traffic_accident (high)
+  A dark blue truck T-bones a white hatchback that failed to yield the right-of-way while entering the
+
+[wrong_way_driving] TR00092: wrong_way_driving -> normal (medium)
+  A red car and a black car travel straight on the right side of the divided highway, while several bl
+
+[wrong_way_driving] TR00094: wrong_way_driving -> normal (medium)
+  A dark car travels straight toward the bottom of the frame on the right side of the median while sev
+
+[wrong_way_driving] TR00095: wrong_way_driving -> traffic_accident (high)
+  A white sedan traveling along Lane 1 collides head-on with a motorcycle and its rider at a crosswalk
+
+[wrong_way_driving] TR00096: wrong_way_driving -> traffic_accident (high)
+  A gray SUV traveling the wrong way through the intersection strikes a motorcycle that is in the proc
+
+[wrong_way_driving] TR00097: wrong_way_driving -> traffic_accident (high)
+  A black sedan traveling straight in lane 4 suffers a head-on collision with a motorcycle that is ill
+
+[wrong_way_driving] TR00099: wrong_way_driving -> normal (medium)
+  A yellow car and a black car travel straight along the right side of the road while a white car move
+
+[wrong_way_driving] TR00100: wrong_way_driving -> normal (medium)
+  A white semi-truck with a white trailer and a black car travel straight in the lanes on the left sid
+
+[wrong_way_driving] TR02751: wrong_way_driving -> traffic_accident (high)
+  A blue car executes an improper left turn into the oncoming lane, resulting in a severe T-bone colli
+
+[wrong_way_driving] TR02761: wrong_way_driving -> normal (medium)
+  A yellow car traveling from the top of the frame towards the bottom and a white car traveling from t
+
+[wrong_way_driving] TR02771: wrong_way_driving -> normal (medium)
+  A white truck with a green trailer travels towards the camera in the rightmost lane of the left carr
+
+[wrong_way_driving] TR02781: wrong_way_driving -> traffic_accident (high)
+  A black sedan loses control and veers sharply from the right, crashing through the white central med
+
+[wrong_way_driving] TR02798: wrong_way_driving -> normal (medium)
+  Multiple vehicles, including a white car, a silver car, and a blue car, maintain a steady and contin
+
+[wrong_way_driving] TR02806: wrong_way_driving -> vehicle_blocking_traffic (medium)
+  A group of vehicles, including a motorcycle, a white car, a dark car, and a yellow car, travel strai
+
+[wrong_way_driving] TR02830: wrong_way_driving -> traffic_accident (high)
+  A black SUV drives in the wrong direction in lane 4, leading to two consecutive head-on collisions. 
+
+[wrong_way_driving] TR02837: wrong_way_driving -> normal (medium)
+  A steady flow of traffic moves through the underpass, with a white car and a silver car among severa
+
+[wrong_way_driving] TR02851: wrong_way_driving -> traffic_congestion (medium)
+  Traffic flows in opposite directions on a multi-lane highway at night, where vehicles moving toward 
+
+[wrong_way_driving] TR02865: wrong_way_driving -> traffic_accident (high)
+  A white sedan traveling toward the top of the frame collides head-on with a black motorcycle moving 
+
+[wrong_way_driving] TR02872: wrong_way_driving -> normal (medium)
+  A red car and a red truck travel straight within the rightmost lane of the right carriageway, while 
+
+[wrong_way_driving] TR02879: wrong_way_driving -> traffic_accident (high)
+  A white van turning left at the intersection collides head-on with a motorcycle traveling straight f
+
+[wrong_way_driving] TR02886: wrong_way_driving -> traffic_accident (high)
+  An empty truck traveling from bottom to top loses control and swerves sharply into the oncoming lane
+
+[wrong_way_driving] TR02899: wrong_way_driving -> normal (medium)
+  Multiple vehicles, including a white truck in the second lane from the left and a white van in the r
+
+[wrong_way_driving] TR02905: wrong_way_driving -> traffic_accident (high)
+  A red truck initiates a left turn at an intersection and fails to yield to an oncoming motorcycle, r
+
+[wrong_way_driving] TR02911: wrong_way_driving -> normal (medium)
+  A white semi-truck with a white trailer and a black car travel straight in the lanes on the left sid
+
+[wrong_way_driving] TR02917: wrong_way_driving -> normal (medium)
+  A high volume of multi-lane highway traffic maintains a steady, continuous flow in both directions, 
+
+[wrong_way_driving] TR02923: wrong_way_driving -> traffic_congestion (medium)
+  On the left side of the highway, a black stretch limousine and a dark pickup truck move forward slow
+
+[wrong_way_driving] TR02929: wrong_way_driving -> traffic_accident (high)
+  A white sedan veers across the double solid yellow line into oncoming traffic, resulting in a violen
+
+[wrong_way_driving] TR02935: wrong_way_driving -> normal (medium)
+  A black car travels straight through the right lane descending the winding road while a white car mo
+
+[wrong_way_driving] TR02941: wrong_way_driving -> traffic_accident (high)
+  A red truck travels the wrong way in Lane 1 of a highway, leading to a violent head-on collision wit
+
+[wrong_way_driving] TR02947: wrong_way_driving -> traffic_congestion (medium)
+  A red car travels away from the camera in the right lane while a white car and a black car approach 
+
+[wrong_way_driving] TR02953: wrong_way_driving -> traffic_accident (high)
+  A silver sedan collides head-on with an oncoming motorcycle ridden by a person in a red outfit. The 
+
+[wrong_way_driving] TR02959: wrong_way_driving -> normal (medium)
+  A dark-colored sedan and a white sedan travel straight in opposite directions on their respective si
+
+[wrong_way_driving] TR02965: wrong_way_driving -> normal (medium)
+  A yellow taxi travels straight towards the camera in the right lane, while a motorcycle follows behi
+
+[wrong_way_driving] TR02971: wrong_way_driving -> normal (medium)
+  A white sedan travels straight along the left side of the divided road while two dark vehicles move 
+
+[wrong_way_driving] TR02983: wrong_way_driving -> vehicle_blocking_traffic (medium)
+  A yellow car and a white car travel straight along the left carriageway from the top left toward the
+
+[wrong_way_driving] TR02989: wrong_way_driving -> normal (medium)
+  A white car, a black car, and a blue bus travel straight in the left, middle, and right lanes respec
+
+[wrong_way_driving] TR02995: wrong_way_driving -> normal (medium)
+  A yellow car and a white car travel straight from the top to the bottom of the frame on the left sid
+
+[wrong_way_driving] TR03007: wrong_way_driving -> normal (medium)
+  A high-speed motorcycle in the oncoming lanes passes directly beneath the camera, immediately follow
+
+[wrong_way_driving] TR03013: wrong_way_driving -> traffic_accident (high)
+  A gray SUV traveling the wrong way through the intersection strikes a motorcycle that is in the proc
+
+[wrong_way_driving] TR03019: wrong_way_driving -> traffic_accident (high)
+  A black SUV enters the frame traveling at high speed in the wrong direction and collides head-on wit
+
+[wrong_way_driving] TR03031: wrong_way_driving -> traffic_congestion (medium)
+  A variety of vehicles, including black sedans, a black SUV, a red car, and white cars, travel straig
+
+[wrong_way_driving] TR03037: wrong_way_driving -> normal (medium)
+  A yellow car and a black car travel straight along the right side of the road while a white car move
+
+[wrong_way_driving] TR03043: wrong_way_driving -> traffic_accident (high)
+  Two white SUVs engage in a severe head-on collision at the center of the frame. The accident occurs 
+
+[wrong_way_driving] TR03049: wrong_way_driving -> normal (medium)
+  A red car travels away from the camera on the right side of the road while a black car simultaneousl
+
+[wrong_way_driving] TR03055: wrong_way_driving -> traffic_accident (high)
+  A white sedan traveling in the correct direction collides head-on with a motorcycle that is travelin
+
+[wrong_way_driving] TR03061: wrong_way_driving -> normal (medium)
+  A white car and a black car travel straight in the leftward lanes while another black car drives str
+
+[wrong_way_driving] TR03067: wrong_way_driving -> normal (medium)
+  A steady stream of light traffic moves in opposite directions on a multi-lane urban road, with a bla
+
+[wrong_way_driving] TR03073: wrong_way_driving -> traffic_accident (high)
+  A white car breaks through the center divider from the right side of the highway and enters the onco
+
+[wrong_way_driving] TR03091: wrong_way_driving -> normal (medium)
+  A white car traveling from the bottom left proceeds straight through the intersection, while a black
+
+[wrong_way_driving] TR03097: wrong_way_driving -> normal (medium)
+  A diverse mix of commercial and passenger vehicles, including a black truck cab with a white trailer
+
+[wrong_way_driving] TR03103: wrong_way_driving -> traffic_congestion (medium)
+  A white van enters the middle lane and travels straight away from the camera, maintaining a steady s
+
+[wrong_way_driving] TR03109: wrong_way_driving -> normal (medium)
+  A red car travels straight from the top to the bottom of the frame on the left side of the road, whi
+
+[wrong_way_driving] TR03115: wrong_way_driving -> vehicle_blocking_traffic (medium)
+  A black car and a red car travel in opposite directions on a divided highway, each maintaining a ste
+
+[wrong_way_driving] TR03121: wrong_way_driving -> normal (medium)
+  A red car travels straight on the left side of the highway while a black car travels straight on the
+
+[wrong_way_driving] TR03127: wrong_way_driving -> normal (medium)
+  A green truck entering from the left executes a left turn to head toward the top of the frame, while
+
+[wrong_way_driving] TR03133: wrong_way_driving -> traffic_accident (high)
+  A dark blue truck T-bones a white hatchback that failed to yield the right-of-way while entering the
+
+[wrong_way_driving] TR03145: wrong_way_driving -> traffic_congestion (medium)
+  On the left side of the highway, a white car, a black SUV, a black pickup truck, and another black S
+
+[wrong_way_driving] TR03151: wrong_way_driving -> traffic_congestion (medium)
+  On a multi-lane highway at night, traffic flows in opposite directions separated by a concrete media
+
+[wrong_way_driving] TR03157: wrong_way_driving -> traffic_accident (high)
+  A black car traveling in lane four suffers a rear-end collision with a black sedan in the adjacent l
+
+[wrong_way_driving] TR03175: wrong_way_driving -> traffic_accident (high)
+  A dark vehicle enters the intersection from the left side driving in the wrong direction and T-bones
+
+[wrong_way_driving] TR03181: wrong_way_driving -> vehicle_blocking_traffic (medium)
+  A yellow car and a black car travel straight toward the camera in the oncoming inner lane, while sim
+
+[wrong_way_driving] TR03187: wrong_way_driving -> normal (medium)
+  A red SUV in the leftmost lane and a white car in the rightmost lane both travel straight at steady 
+
+[wrong_way_driving] TR03193: wrong_way_driving -> normal (medium)
+  A dark car travels straight toward the bottom of the frame on the right side of the median while sev
+
+[wrong_way_driving] TR03199: wrong_way_driving -> traffic_accident (high)
+  A white sedan driving in the wrong direction in the second lane collides in a T-bone fashion with an
+
+[wrong_way_driving] TR03204: wrong_way_driving -> vehicle_blocking_traffic (medium)
+  A white car on the left side of the road and a black car on the right side of the road travel straig
+
+[wrong_way_driving] TR03209: wrong_way_driving -> normal (medium)
+  A dark sedan and a white sedan travel straight away from the camera in the rightmost lanes, while tw
+
+[wrong_way_driving] TR03214: wrong_way_driving -> normal (medium)
+  A white SUV, a white pickup truck, and a red pickup truck travel straight in their respective lanes 
+

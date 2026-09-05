@@ -1,0 +1,14 @@
+# Stage 1 (frozen encoder + temporal head) — required
+torch>=2.4
+transformers>=4.45,<5   # v5 changed get_image_features to return ModelOutput; breaks embed.py
+sentencepiece
+protobuf
+opencv-python
+pillow
+numpy
+pandas
+scipy
+
+# Stage 2 (VLM verifier on Apple Silicon) — optional but recommended
+mlx>=0.18 ; sys_platform == "darwin"
+mlx-vlm>=0.1.12 ; sys_platform == "darwin"

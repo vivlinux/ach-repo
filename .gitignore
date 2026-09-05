@@ -1,0 +1,15 @@
+# environment
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+.env.local
+
+# data & derived caches — reproducible from vad.cli embed, not needed in the repo
+cache/
+data/
+out/*.npz
+out/*.runtime.json
+out/*.log
+
+# keep: out/head.pt, out/submission*.json, out/pred_head*.csv, out/*.pt

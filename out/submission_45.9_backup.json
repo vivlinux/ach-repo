@@ -1,0 +1,767 @@
+{
+  "schema_version": "1.0",
+  "submission_id": "ahc-run-01",
+  "model_name": "siglip2-cascade+qwen3-vl-8b",
+  "run_metadata": {
+    "total_wall_time_ms": 794884.6,
+    "max_parallel_videos": 1,
+    "hardware": "1x Apple M2 Max (MPS + MLX)"
+  },
+  "predictions": [
+    {
+      "video_id": "T001",
+      "events": [],
+      "runtime_metadata": {
+        "frames_processed": 6,
+        "chunks_processed": 1,
+        "end_to_end_internal_time_ms": 5210.7,
+        "model_runtimes": [
+          {
+            "model_name": "mlx-community/Qwen3-VL-8B-Instruct-4bit",
+            "call_count": 1,
+            "total_time_ms": 5102.9,
+            "average_time_ms": 5102.9,
+            "p50_time_ms": 5102.9,
+            "p95_time_ms": 5102.9,
+            "max_time_ms": 5102.9
+          }
+        ]
+      }
+    },
+    {
+      "video_id": "T002",
+      "events": [],
+      "runtime_metadata": {
+        "frames_processed": 6,
+        "chunks_processed": 1,
+        "end_to_end_internal_time_ms": 3146.4,
+        "model_runtimes": [
+          {
+            "model_name": "mlx-community/Qwen3-VL-8B-Instruct-4bit",
+            "call_count": 1,
+            "total_time_ms": 3065.2,
+            "average_time_ms": 3065.2,
+            "p50_time_ms": 3065.2,
+            "p95_time_ms": 3065.2,
+            "max_time_ms": 3065.2
+          }
+        ]
+      }
+    },
+    {
+      "video_id": "T003",
+      "events": [],
+      "runtime_metadata": {
+        "frames_processed": 6,
+        "chunks_processed": 1,
+        "end_to_end_internal_time_ms": 2602.0,
+        "model_runtimes": [
+          {
+            "model_name": "mlx-community/Qwen3-VL-8B-Instruct-4bit",
+            "call_count": 1,
+            "total_time_ms": 2589.2,
+            "average_time_ms": 2589.2,
+            "p50_time_ms": 2589.2,
+            "p95_time_ms": 2589.2,
+            "max_time_ms": 2589.2
+          }
+        ]
+      }
+    },
+    {
+      "video_id": "T004",
+      "events": [],
+      "runtime_metadata": {
+        "frames_processed": 6,
+        "chunks_processed": 1,
+        "end_to_end_internal_time_ms": 2543.0,
+        "model_runtimes": [
+          {
+            "model_name": "mlx-community/Qwen3-VL-8B-Instruct-4bit",
+            "call_count": 1,
+            "total_time_ms": 2533.8,
+            "average_time_ms": 2533.8,
+            "p50_time_ms": 2533.8,
+            "p95_time_ms": 2533.8,
+            "max_time_ms": 2533.8
+          }
+        ]
+      }
+    },
+    {
+      "video_id": "T005",
+      "events": [
+        {
+          "class_name": "traffic_accident",
+          "start_time_sec": null,
+          "end_time_sec": null
+        }
+      ],
+      "runtime_metadata": {
+        "frames_processed": 6,
+        "chunks_processed": 1,
+        "end_to_end_internal_time_ms": 3462.0,
+        "model_runtimes": [
+          {
+            "model_name": "mlx-community/Qwen3-VL-8B-Instruct-4bit",
+            "call_count": 1,
+            "total_time_ms": 3378.7,
+            "average_time_ms": 3378.7,
+            "p50_time_ms": 3378.7,
+            "p95_time_ms": 3378.7,
+            "max_time_ms": 3378.7
+          }
+        ]
+      }
+    },
+    {
+      "video_id": "T006",
+      "events": [
+        {
+          "class_name": "traffic_accident",
+          "start_time_sec": null,
+          "end_time_sec": null
+        }
+      ],
+      "runtime_metadata": {
+        "frames_processed": 6,
+        "chunks_processed": 1,
+        "end_to_end_internal_time_ms": 2730.4,
+        "model_runtimes": [
+          {
+            "model_name": "mlx-community/Qwen3-VL-8B-Instruct-4bit",
+            "call_count": 1,
+            "total_time_ms": 2702.2,
+            "average_time_ms": 2702.2,
+            "p50_time_ms": 2702.2,
+            "p95_time_ms": 2702.2,
+            "max_time_ms": 2702.2
+          }
+        ]
+      }
+    },
+    {
+      "video_id": "T007",
+      "events": [],
+      "runtime_metadata": {
+        "frames_processed": 6,
+        "chunks_processed": 1,
+        "end_to_end_internal_time_ms": 2632.5,
+        "model_runtimes": [
+          {
+            "model_name": "mlx-community/Qwen3-VL-8B-Instruct-4bit",
+            "call_count": 1,
+            "total_time_ms": 2600.6,
+            "average_time_ms": 2600.6,
+            "p50_time_ms": 2600.6,
+            "p95_time_ms": 2600.6,
+            "max_time_ms": 2600.6
+          }
+        ]
+      }
+    },
+    {
+      "video_id": "T008",
+      "events": [
+        {
+          "class_name": "vehicle_blocking_traffic",
+          "start_time_sec": null,
+          "end_time_sec": null
+        }
+      ],
+      "runtime_metadata": {
+        "frames_processed": 6,
+        "chunks_processed": 1,
+        "end_to_end_internal_time_ms": 3391.4,
+        "model_runtimes": [
+          {
+            "model_name": "mlx-community/Qwen3-VL-8B-Instruct-4bit",
+            "call_count": 1,
+            "total_time_ms": 3301.7,
+            "average_time_ms": 3301.7,
+            "p50_time_ms": 3301.7,
+            "p95_time_ms": 3301.7,
+            "max_time_ms": 3301.7
+          }
+        ]
+      }
+    },
+    {
+      "video_id": "T009",
+      "events": [
+        {
+          "class_name": "traffic_congestion",
+          "start_time_sec": null,
+          "end_time_sec": null
+        }
+      ],
+      "runtime_metadata": {
+        "frames_processed": 6,
+        "chunks_processed": 1,
+        "end_to_end_internal_time_ms": 3804.6,
+        "model_runtimes": [
+          {
+            "model_name": "mlx-community/Qwen3-VL-8B-Instruct-4bit",
+            "call_count": 1,
+            "total_time_ms": 3718.9,
+            "average_time_ms": 3718.9,
+            "p50_time_ms": 3718.9,
+            "p95_time_ms": 3718.9,
+            "max_time_ms": 3718.9
+          }
+        ]
+      }
+    },
+    {
+      "video_id": "T010",
+      "events": [],
+      "runtime_metadata": {
+        "frames_processed": 6,
+        "chunks_processed": 1,
+        "end_to_end_internal_time_ms": 3125.6,
+        "model_runtimes": [
+          {
+            "model_name": "mlx-community/Qwen3-VL-8B-Instruct-4bit",
+            "call_count": 1,
+            "total_time_ms": 2963.8,
+            "average_time_ms": 2963.8,
+            "p50_time_ms": 2963.8,
+            "p95_time_ms": 2963.8,
+            "max_time_ms": 2963.8
+          }
+        ]
+      }
+    },
+    {
+      "video_id": "T011",
+      "events": [
+        {
+          "class_name": "traffic_accident",
+          "start_time_sec": null,
+          "end_time_sec": null
+        }
+      ],
+      "runtime_metadata": {
+        "frames_processed": 6,
+        "chunks_processed": 1,
+        "end_to_end_internal_time_ms": 2985.8,
+        "model_runtimes": [
+          {
+            "model_name": "mlx-community/Qwen3-VL-8B-Instruct-4bit",
+            "call_count": 1,
+            "total_time_ms": 2964.7,
+            "average_time_ms": 2964.7,
+            "p50_time_ms": 2964.7,
+            "p95_time_ms": 2964.7,
+            "max_time_ms": 2964.7
+          }
+        ]
+      }
+    },
+    {
+      "video_id": "T012",
+      "events": [
+        {
+          "class_name": "fire",
+          "start_time_sec": null,
+          "end_time_sec": null
+        }
+      ],
+      "runtime_metadata": {
+        "frames_processed": 6,
+        "chunks_processed": 1,
+        "end_to_end_internal_time_ms": 3604.0,
+        "model_runtimes": [
+          {
+            "model_name": "mlx-community/Qwen3-VL-8B-Instruct-4bit",
+            "call_count": 1,
+            "total_time_ms": 3538.2,
+            "average_time_ms": 3538.2,
+            "p50_time_ms": 3538.2,
+            "p95_time_ms": 3538.2,
+            "max_time_ms": 3538.2
+          }
+        ]
+      }
+    },
+    {
+      "video_id": "T013",
+      "events": [
+        {
+          "class_name": "smoke",
+          "start_time_sec": null,
+          "end_time_sec": null
+        }
+      ],
+      "runtime_metadata": {
+        "frames_processed": 6,
+        "chunks_processed": 1,
+        "end_to_end_internal_time_ms": 3512.1,
+        "model_runtimes": [
+          {
+            "model_name": "mlx-community/Qwen3-VL-8B-Instruct-4bit",
+            "call_count": 1,
+            "total_time_ms": 3436.8,
+            "average_time_ms": 3436.8,
+            "p50_time_ms": 3436.8,
+            "p95_time_ms": 3436.8,
+            "max_time_ms": 3436.8
+          }
+        ]
+      }
+    },
+    {
+      "video_id": "T014",
+      "events": [
+        {
+          "class_name": "fire",
+          "start_time_sec": null,
+          "end_time_sec": null
+        }
+      ],
+      "runtime_metadata": {
+        "frames_processed": 6,
+        "chunks_processed": 1,
+        "end_to_end_internal_time_ms": 3436.1,
+        "model_runtimes": [
+          {
+            "model_name": "mlx-community/Qwen3-VL-8B-Instruct-4bit",
+            "call_count": 1,
+            "total_time_ms": 3377.9,
+            "average_time_ms": 3377.9,
+            "p50_time_ms": 3377.9,
+            "p95_time_ms": 3377.9,
+            "max_time_ms": 3377.9
+          }
+        ]
+      }
+    },
+    {
+      "video_id": "T015",
+      "events": [
+        {
+          "class_name": "smoke",
+          "start_time_sec": null,
+          "end_time_sec": null
+        }
+      ],
+      "runtime_metadata": {
+        "frames_processed": 6,
+        "chunks_processed": 1,
+        "end_to_end_internal_time_ms": 3668.5,
+        "model_runtimes": [
+          {
+            "model_name": "mlx-community/Qwen3-VL-8B-Instruct-4bit",
+            "call_count": 1,
+            "total_time_ms": 3600.3,
+            "average_time_ms": 3600.3,
+            "p50_time_ms": 3600.3,
+            "p95_time_ms": 3600.3,
+            "max_time_ms": 3600.3
+          }
+        ]
+      }
+    },
+    {
+      "video_id": "T016",
+      "events": [
+        {
+          "class_name": "waterlogging_or_flood",
+          "start_time_sec": null,
+          "end_time_sec": null
+        }
+      ],
+      "runtime_metadata": {
+        "frames_processed": 6,
+        "chunks_processed": 1,
+        "end_to_end_internal_time_ms": 3664.5,
+        "model_runtimes": [
+          {
+            "model_name": "mlx-community/Qwen3-VL-8B-Instruct-4bit",
+            "call_count": 1,
+            "total_time_ms": 3579.2,
+            "average_time_ms": 3579.2,
+            "p50_time_ms": 3579.2,
+            "p95_time_ms": 3579.2,
+            "max_time_ms": 3579.2
+          }
+        ]
+      }
+    },
+    {
+      "video_id": "T017",
+      "events": [
+        {
+          "class_name": "waterlogging_or_flood",
+          "start_time_sec": null,
+          "end_time_sec": null
+        }
+      ],
+      "runtime_metadata": {
+        "frames_processed": 6,
+        "chunks_processed": 1,
+        "end_to_end_internal_time_ms": 3510.1,
+        "model_runtimes": [
+          {
+            "model_name": "mlx-community/Qwen3-VL-8B-Instruct-4bit",
+            "call_count": 1,
+            "total_time_ms": 3424.8,
+            "average_time_ms": 3424.8,
+            "p50_time_ms": 3424.8,
+            "p95_time_ms": 3424.8,
+            "max_time_ms": 3424.8
+          }
+        ]
+      }
+    },
+    {
+      "video_id": "T018",
+      "events": [
+        {
+          "class_name": "traffic_accident",
+          "start_time_sec": null,
+          "end_time_sec": null
+        }
+      ],
+      "runtime_metadata": {
+        "frames_processed": 6,
+        "chunks_processed": 1,
+        "end_to_end_internal_time_ms": 2812.8,
+        "model_runtimes": [
+          {
+            "model_name": "mlx-community/Qwen3-VL-8B-Instruct-4bit",
+            "call_count": 1,
+            "total_time_ms": 2783.0,
+            "average_time_ms": 2783.0,
+            "p50_time_ms": 2783.0,
+            "p95_time_ms": 2783.0,
+            "max_time_ms": 2783.0
+          }
+        ]
+      }
+    },
+    {
+      "video_id": "T019",
+      "events": [],
+      "runtime_metadata": {
+        "frames_processed": 6,
+        "chunks_processed": 1,
+        "end_to_end_internal_time_ms": 2664.3,
+        "model_runtimes": [
+          {
+            "model_name": "mlx-community/Qwen3-VL-8B-Instruct-4bit",
+            "call_count": 1,
+            "total_time_ms": 2630.9,
+            "average_time_ms": 2630.9,
+            "p50_time_ms": 2630.9,
+            "p95_time_ms": 2630.9,
+            "max_time_ms": 2630.9
+          }
+        ]
+      }
+    },
+    {
+      "video_id": "T020",
+      "events": [],
+      "runtime_metadata": {
+        "frames_processed": 6,
+        "chunks_processed": 1,
+        "end_to_end_internal_time_ms": 2724.0,
+        "model_runtimes": [
+          {
+            "model_name": "mlx-community/Qwen3-VL-8B-Instruct-4bit",
+            "call_count": 1,
+            "total_time_ms": 2686.7,
+            "average_time_ms": 2686.7,
+            "p50_time_ms": 2686.7,
+            "p95_time_ms": 2686.7,
+            "max_time_ms": 2686.7
+          }
+        ]
+      }
+    },
+    {
+      "video_id": "T021",
+      "events": [],
+      "runtime_metadata": {
+        "frames_processed": 6,
+        "chunks_processed": 1,
+        "end_to_end_internal_time_ms": 3236.8,
+        "model_runtimes": [
+          {
+            "model_name": "mlx-community/Qwen3-VL-8B-Instruct-4bit",
+            "call_count": 1,
+            "total_time_ms": 2955.4,
+            "average_time_ms": 2955.4,
+            "p50_time_ms": 2955.4,
+            "p95_time_ms": 2955.4,
+            "max_time_ms": 2955.4
+          }
+        ]
+      }
+    },
+    {
+      "video_id": "T022",
+      "events": [],
+      "runtime_metadata": {
+        "frames_processed": 6,
+        "chunks_processed": 1,
+        "end_to_end_internal_time_ms": 3051.1,
+        "model_runtimes": [
+          {
+            "model_name": "mlx-community/Qwen3-VL-8B-Instruct-4bit",
+            "call_count": 1,
+            "total_time_ms": 2838.1,
+            "average_time_ms": 2838.1,
+            "p50_time_ms": 2838.1,
+            "p95_time_ms": 2838.1,
+            "max_time_ms": 2838.1
+          }
+        ]
+      }
+    },
+    {
+      "video_id": "T023",
+      "events": [],
+      "runtime_metadata": {
+        "frames_processed": 6,
+        "chunks_processed": 1,
+        "end_to_end_internal_time_ms": 2967.6,
+        "model_runtimes": [
+          {
+            "model_name": "mlx-community/Qwen3-VL-8B-Instruct-4bit",
+            "call_count": 1,
+            "total_time_ms": 2699.1,
+            "average_time_ms": 2699.1,
+            "p50_time_ms": 2699.1,
+            "p95_time_ms": 2699.1,
+            "max_time_ms": 2699.1
+          }
+        ]
+      }
+    },
+    {
+      "video_id": "T024",
+      "events": [],
+      "runtime_metadata": {
+        "frames_processed": 6,
+        "chunks_processed": 1,
+        "end_to_end_internal_time_ms": 3460.9,
+        "model_runtimes": [
+          {
+            "model_name": "mlx-community/Qwen3-VL-8B-Instruct-4bit",
+            "call_count": 1,
+            "total_time_ms": 3153.4,
+            "average_time_ms": 3153.4,
+            "p50_time_ms": 3153.4,
+            "p95_time_ms": 3153.4,
+            "max_time_ms": 3153.4
+          }
+        ]
+      }
+    },
+    {
+      "video_id": "T025",
+      "events": [],
+      "runtime_metadata": {
+        "frames_processed": 500,
+        "chunks_processed": 122,
+        "end_to_end_internal_time_ms": 24028.2,
+        "model_runtimes": []
+      }
+    },
+    {
+      "video_id": "T026",
+      "events": [],
+      "runtime_metadata": {
+        "frames_processed": 501,
+        "chunks_processed": 123,
+        "end_to_end_internal_time_ms": 26655.0,
+        "model_runtimes": []
+      }
+    },
+    {
+      "video_id": "T027",
+      "events": [],
+      "runtime_metadata": {
+        "frames_processed": 500,
+        "chunks_processed": 122,
+        "end_to_end_internal_time_ms": 89194.8,
+        "model_runtimes": []
+      }
+    },
+    {
+      "video_id": "T028",
+      "events": [],
+      "runtime_metadata": {
+        "frames_processed": 500,
+        "chunks_processed": 122,
+        "end_to_end_internal_time_ms": 50455.4,
+        "model_runtimes": []
+      }
+    },
+    {
+      "video_id": "T029",
+      "events": [],
+      "runtime_metadata": {
+        "frames_processed": 480,
+        "chunks_processed": 117,
+        "end_to_end_internal_time_ms": 148889.6,
+        "model_runtimes": []
+      }
+    },
+    {
+      "video_id": "T030",
+      "events": [],
+      "runtime_metadata": {
+        "frames_processed": 480,
+        "chunks_processed": 117,
+        "end_to_end_internal_time_ms": 106370.4,
+        "model_runtimes": []
+      }
+    },
+    {
+      "video_id": "T031",
+      "events": [
+        {
+          "class_name": "traffic_congestion",
+          "start_time_sec": 0.0,
+          "end_time_sec": 359.5
+        }
+      ],
+      "runtime_metadata": {
+        "frames_processed": 720,
+        "chunks_processed": 177,
+        "end_to_end_internal_time_ms": 85217.9,
+        "model_runtimes": []
+      }
+    },
+    {
+      "video_id": "T032",
+      "events": [],
+      "runtime_metadata": {
+        "frames_processed": 577,
+        "chunks_processed": 142,
+        "end_to_end_internal_time_ms": 89523.1,
+        "model_runtimes": []
+      }
+    },
+    {
+      "video_id": "T033",
+      "events": [
+        {
+          "class_name": "wrong_way_driving",
+          "start_time_sec": 0.0,
+          "end_time_sec": 33.53
+        },
+        {
+          "class_name": "fighting_or_violence",
+          "start_time_sec": 32.03,
+          "end_time_sec": 43.54
+        },
+        {
+          "class_name": "vehicle_blocking_traffic",
+          "start_time_sec": 40.04,
+          "end_time_sec": 61.56
+        },
+        {
+          "class_name": "wrong_way_driving",
+          "start_time_sec": 56.06,
+          "end_time_sec": 85.59
+        },
+        {
+          "class_name": "vehicle_blocking_traffic",
+          "start_time_sec": 80.08,
+          "end_time_sec": 103.6
+        },
+        {
+          "class_name": "wrong_way_driving",
+          "start_time_sec": 100.1,
+          "end_time_sec": 207.71
+        },
+        {
+          "class_name": "wrong_way_driving",
+          "start_time_sec": 236.24,
+          "end_time_sec": 297.8
+        },
+        {
+          "class_name": "vehicle_blocking_traffic",
+          "start_time_sec": 294.29,
+          "end_time_sec": 321.82
+        },
+        {
+          "class_name": "wrong_way_driving",
+          "start_time_sec": 316.32,
+          "end_time_sec": 369.87
+        },
+        {
+          "class_name": "vehicle_blocking_traffic",
+          "start_time_sec": 364.36,
+          "end_time_sec": 383.88
+        },
+        {
+          "class_name": "wrong_way_driving",
+          "start_time_sec": 422.42,
+          "end_time_sec": 485.99
+        },
+        {
+          "class_name": "vehicle_blocking_traffic",
+          "start_time_sec": 480.48,
+          "end_time_sec": 498.0
+        },
+        {
+          "class_name": "wrong_way_driving",
+          "start_time_sec": 492.49,
+          "end_time_sec": 514.01
+        },
+        {
+          "class_name": "fighting_or_violence",
+          "start_time_sec": 514.51,
+          "end_time_sec": 526.03
+        },
+        {
+          "class_name": "wrong_way_driving",
+          "start_time_sec": 532.53,
+          "end_time_sec": 582.08
+        },
+        {
+          "class_name": "loitering_or_suspicious_presence",
+          "start_time_sec": 582.58,
+          "end_time_sec": 596.1
+        },
+        {
+          "class_name": "wrong_way_driving",
+          "start_time_sec": 592.59,
+          "end_time_sec": 622.12
+        },
+        {
+          "class_name": "loitering_or_suspicious_presence",
+          "start_time_sec": 616.62,
+          "end_time_sec": 628.63
+        }
+      ],
+      "runtime_metadata": {
+        "frames_processed": 1257,
+        "chunks_processed": 312,
+        "end_to_end_internal_time_ms": 55473.3,
+        "model_runtimes": []
+      }
+    },
+    {
+      "video_id": "T034",
+      "events": [
+        {
+          "class_name": "road_spill_or_debris",
+          "start_time_sec": 153.6,
+          "end_time_sec": 172.27
+        }
+      ],
+      "runtime_metadata": {
+        "frames_processed": 706,
+        "chunks_processed": 174,
+        "end_to_end_internal_time_ms": 41129.7,
+        "model_runtimes": []
+      }
+    }
+  ]
+}

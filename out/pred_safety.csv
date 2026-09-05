@@ -1,0 +1,79 @@
+video_id,level,is_anomaly,class_name,start_time_sec,end_time_sec,description_summary
+T001,1,1,loitering_or_suspicious_presence,,,confidence=0.67
+T002,1,1,loitering_or_suspicious_presence,,,confidence=0.95
+T003,1,1,vehicle_blocking_traffic,,,confidence=0.87
+T004,1,0,normal,,,confidence=0.53
+T005,1,0,normal,,,confidence=0.65
+T006,1,1,wrong_way_driving,,,confidence=0.83
+T006,2,1,wrong_way_driving,0.0,13.5,Yes. A car drives down a road with trees on both sides.
+T007,1,1,vehicle_blocking_traffic,,,confidence=0.80
+T007,2,1,vehicle_blocking_traffic,0.0,22.5,Yes. A truck is driving on a snowy road.
+T008,1,1,vehicle_blocking_traffic,,,confidence=0.90
+T008,2,1,vehicle_blocking_traffic,0.0,6.0,Yes. A red truck is driving on the road.
+T009,1,1,traffic_congestion,,,confidence=0.94
+T009,2,1,traffic_congestion,0.0,6.0,Yes. There is heavy traffic on a bridge.
+T010,1,1,wrong_way_driving,,,confidence=0.75
+T011,1,1,vehicle_blocking_traffic,,,confidence=0.62
+T011,2,1,vehicle_blocking_traffic,0.0,11.0,"Yes, the scene shows a busy street with multiple vehicles and people moving around."
+T012,1,1,smoke,,,confidence=0.90
+T012,2,1,smoke,0.0,6.0,No. The scene shows a city at night with a large fire burning in the distance.
+T013,1,1,smoke,,,confidence=1.00
+T013,2,1,smoke,0.0,6.0,Yes. There is a city with buildings and a river with snow on the ground.
+T014,1,1,smoke,,,confidence=0.92
+T014,2,1,smoke,0.0,6.0,Yes. A fire is burning on a roof with thick smoke billowing out.
+T015,1,1,smoke,,,confidence=1.00
+T015,2,1,smoke,0.0,6.0,Yes. There is a plume of smoke rising from a fire in the distance.
+T016,1,1,waterlogging_or_flood,,,confidence=0.98
+T016,2,1,waterlogging_or_flood,0.0,6.04,Yes. The area is flooded with water covering the streets and buildings.
+T017,1,1,waterlogging_or_flood,,,confidence=0.98
+T017,2,1,waterlogging_or_flood,0.0,6.0,No. The video shows a static view of a landscape with a road and a body of water under a blue sky with
+T018,1,1,wrong_way_driving,,,confidence=0.82
+T018,2,1,wrong_way_driving,0.0,11.0,Yes. A truck is driving on a highway and crashes into another truck.
+T019,1,0,normal,,,confidence=0.55
+T020,1,1,wrong_way_driving,,,confidence=0.87
+T021,1,0,normal,,,confidence=0.52
+T022,1,0,normal,,,confidence=0.74
+T023,1,0,normal,,,confidence=0.53
+T024,1,0,normal,,,confidence=0.64
+T025,1,1,vehicle_blocking_traffic,,,confidence=0.58
+T025,2,1,vehicle_blocking_traffic,82.56,95.52,Yes. Two men are standing on the sidewalk next to a parked car.
+T025,2,1,vehicle_blocking_traffic,215.04,226.08,Yes. A man is riding a bike on the sidewalk.
+T026,1,1,wrong_way_driving,,,confidence=0.88
+T026,2,1,vehicle_blocking_traffic,5.76,103.2,Yes. The video shows a roundabout with cars and trucks moving around it.
+T026,2,1,wrong_way_driving,99.84,130.08,Yes. A car drives through a roundabout.
+T026,2,1,vehicle_blocking_traffic,147.84,212.64,Yes. A car drives down the road.
+T026,2,1,vehicle_blocking_traffic,220.8,240.0,Yes. Aerial view of a roundabout with vehicles and trees surrounding it.
+T027,1,1,traffic_congestion,,,confidence=0.72
+T027,2,1,vehicle_blocking_traffic,26.88,39.84,Yes. The traffic is moving slowly on the highway.
+T027,2,1,traffic_congestion,36.48,139.68,Yes. There is heavy traffic on the highway.
+T028,1,1,wrong_way_driving,,,confidence=0.94
+T028,2,1,wrong_way_driving,86.4,99.36,Yes. A car drives through a snowy intersection.
+T028,2,1,vehicle_blocking_traffic,134.4,153.12,Yes. The car is driving on the road.
+T028,2,1,wrong_way_driving,147.84,158.88,Yes. A car is driving on a snowy road.
+T028,2,1,wrong_way_driving,205.44,220.32,Yes. The car is driving on a snowy road.
+T028,2,1,vehicle_blocking_traffic,222.72,239.52,Yes. A blue bus is driving through a roundabout.
+T029,1,1,vehicle_blocking_traffic,,,confidence=0.75
+T029,2,1,vehicle_blocking_traffic,14.01,35.54,Yes. Aerial view of a roundabout with cars and buses moving around it.
+T029,2,1,vehicle_blocking_traffic,82.08,99.6,Yes. A car drives through a roundabout.
+T029,2,1,vehicle_blocking_traffic,118.12,129.63,"Yes. The scene shows a roundabout with vehicles moving around it, surrounded by trees and power lines."
+T029,2,1,vehicle_blocking_traffic,146.15,171.67,Yes. A car drives through a roundabout.
+T030,1,1,vehicle_blocking_traffic,,,confidence=0.59
+T030,2,1,vehicle_blocking_traffic,54.05,67.57,Yes. A blue bus is driving through a roundabout.
+T030,2,1,vehicle_blocking_traffic,74.07,85.59,Yes. A blue truck is driving through a roundabout.
+T031,1,1,traffic_congestion,,,confidence=0.83
+T031,2,1,traffic_congestion,0.0,359.5,Yes. There is heavy traffic on the highway.
+T032,1,0,normal,,,confidence=0.69
+T033,1,1,wrong_way_driving,,,confidence=0.95
+T033,2,1,wrong_way_driving,0.0,33.53,Yes. The cars are driving on the road.
+T033,2,1,vehicle_blocking_traffic,40.04,61.56,Yes. A truck drives down the road and hits a pole.
+T033,2,1,wrong_way_driving,56.06,85.59,Yes. The car drives past a stop sign and continues down the road.
+T033,2,1,vehicle_blocking_traffic,80.08,103.6,Yes. The scene shows a busy intersection with cars and trucks moving through the intersection.
+T033,2,1,wrong_way_driving,100.1,207.71,Yes. A person is taking a picture of a sign on the side of the road.
+T033,2,1,vehicle_blocking_traffic,294.29,321.82,Yes. A man is walking in the rain.
+T033,2,1,wrong_way_driving,316.32,369.87,Yes. The car drives on the road and stops at the intersection.
+T033,2,1,vehicle_blocking_traffic,364.36,383.88,Yes. A white limousine is parked on the side of the road.
+T033,2,1,wrong_way_driving,422.42,485.99,Yes. A car drives down the road.
+T033,2,1,vehicle_blocking_traffic,480.48,498.0,Yes. A woman walks down the street as a red truck drives by.
+T033,2,1,wrong_way_driving,492.49,514.01,Yes. A black car drives past the camera.
+T033,2,1,loitering_or_suspicious_presence,582.58,596.1,Yes. A van drives into a parking garage.
+T034,1,1,road_spill_or_debris,,,confidence=0.87
