@@ -90,6 +90,29 @@ def extract(scores: np.ndarray, spans, scale: float = 1.0,
     return sorted(out, key=lambda x: x.start)
 
 
+def never_silence(raw: list[Interval], kept: list[Interval]) -> list[Interval]:
+    """Guard added 2026-09-05, after measuring that a blanket VLM gate on the
+    trained head's output silenced 15/34 videos and cost 9 emulated points
+    (53.7 -> 44.9): under the arena's rules a real-event video that ends up
+    with ZERO predicted intervals scores 0 for that video (it loses "alert
+    credit"), even if every removed interval really was a false alarm. So
+    any filtering step (the VLM gate, or --novelty's dampening below) must
+    run through this: if it emptied a video that HAD candidates, restore
+    that video's single highest-scoring original interval rather than
+    leave it silent. A version of this rule (restore one interval per
+    emptied video) recovered a full gate from 44.9 to 51.2 emulated.
+    `raw` and `kept` only need a `.start`/`.score` attribute per interval and
+    a way to see which videos are present -- callers pass the pre- and
+    post-filter interval lists keyed by video via a dict, not this list form;
+    see cmd_predict's --novelty wiring for the dict-shaped version this
+    signature is a stand-in for when working with a single video's Intervals."""
+    if kept:
+        return kept
+    if not raw:
+        return kept
+    return [max(raw, key=lambda i: i.score)]
+
+
 def video_decision(scores: np.ndarray, intervals: list[Interval]):
     """Level-1 answer: (is_anomaly, class_name, confidence)."""
     if intervals:

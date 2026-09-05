@@ -29,6 +29,22 @@ LABELS = [
 ANOMALY_LABELS = [c for c in LABELS if c != NORMAL]
 L2I = {c: i for i, c in enumerate(LABELS)}
 
+# Classes the trained head cannot have learned a general concept for -- each
+# comes from essentially one training camera, or (road_spill) has zero
+# genuine examples after relabelling (PROGRESS.md SS7, SS12). On unseen
+# cameras these are the ones most likely to be memorised-camera artefacts
+# rather than real detections; cmd_predict's --novelty dampens them
+# specifically on out-of-distribution windows, added 2026-09-05.
+FRAGILE_CLASSES = {
+    "stalled_or_broken_down_vehicle",   # one camera in train
+    "vehicle_blocking_traffic",         # one camera in train
+    "wrong_way_driving",                # one camera in train (35 examples)
+    "road_spill_or_debris",             # zero genuine examples after relabel
+    "loitering_or_suspicious_presence", # 79 videos, all weakly-labelled MIL,
+                                         # no timestamps ever -- likely source
+                                         # of the head's saturation at 1.000
+}
+
 # ---------------------------------------------------------------- sampling
 FPS = 2.0          # frames sampled per second of video
 WIN = 16           # frames per window  -> 8 s of context

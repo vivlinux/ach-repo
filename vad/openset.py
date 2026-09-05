@@ -55,6 +55,14 @@ class NoveltyBank:
         self.calib["novelty_thr"] = float(np.quantile(novelty_scores, q))
         return self.calib["novelty_thr"]
 
+    def calibrate_dist(self, dist_scores: np.ndarray, q: float = 0.98):
+        """Fixed 2026-09-05: this used to be the only calibration, and it was
+        fed raw distance() values while is_unknown() compared against
+        novelty()'s different [0,1] scale -- a straight units mismatch.
+        is_ood() below is the one that actually uses this threshold."""
+        self.calib["dist_thr"] = float(np.quantile(dist_scores, q))
+        return self.calib["dist_thr"]
+
     # ------------------------------------------------------------ score
     def distance(self, feat: np.ndarray, k: int = 8) -> float:
         """Mean cosine distance to the k nearest training frames. 0 = familiar."""
@@ -83,6 +91,14 @@ class NoveltyBank:
         thr = self.calib.get("novelty_thr", 0.55)
         an = scores[[L2I[c] for c in ANOMALY_LABELS]]
         return nov >= thr and float(an.max()) < class_thr
+
+    def is_ood(self, feat: np.ndarray) -> bool:
+        """Pure manifold-distance abstention signal for cmd_predict, added
+        2026-09-05: 'is this scene type in training at all', independent of
+        what any classifier says about it. Uses calibrate_dist()'s threshold
+        (raw distance() units), not novelty()'s mixed scale."""
+        thr = self.calib.get("dist_thr", 0.35)
+        return self.distance(feat) >= thr
 
     # ------------------------------------------------------------ io
     def save(self, path: Path):

@@ -13,7 +13,7 @@ from . import head as H
 from . import io as VIO
 from . import postprocess as PP
 from . import zeroshot as ZS
-from .config import (CACHE, DATA, L2I, LABELS, NORMAL, OUT, STRIDE, WIN)
+from .config import (CACHE, DATA, FRAGILE_CLASSES, L2I, LABELS, NORMAL, OUT, STRIDE, WIN)
 from .embed import Embedder, embed_video, pick_device
 from .windows import pack, window_bounds, window_labels
 
@@ -155,6 +155,14 @@ def cmd_predict(a):
         from .verify import Verifier
         verifier = Verifier(a.vlm)
 
+    bank = None
+    if a.novelty:
+        from .openset import NoveltyBank
+        bank = NoveltyBank.load(Path(a.novelty))
+        print(f"  novelty bank loaded from {a.novelty} "
+              f"(dist_thr={bank.calib.get('dist_thr', '?')}); "
+              f"dampening on OOD windows for: {sorted(FRAGILE_CLASSES)}")
+
     vids = _videos(a.split, a.data)
     if a.only:
         want = {x.strip() for x in a.only.split(",") if x.strip()}
@@ -180,7 +188,24 @@ def cmd_predict(a):
         if a.mode == "head" and zs_cols:
             zs = ZS.score_windows(f, spans, T)
             scores[:, zs_cols] = zs[:, zs_cols]
-        ivs = PP.extract(scores, spans, scale=a.scale, long_merge=a.long_merge)
+        ivs_raw = PP.extract(scores, spans, scale=a.scale, long_merge=a.long_merge)
+        ivs = ivs_raw
+        if bank is not None:
+            # Dampen (never zero) fragile-class scores on windows whose
+            # embedding sits far from anything the bank saw in training --
+            # "is this scene type in training at all". Never touches
+            # camera-diverse classes, and never fully silences a video that
+            # had real candidates: extract on the dampened scores, then
+            # PP.never_silence restores the single best original interval
+            # if dampening emptied a video outright (the alert-credit
+            # lesson from the full VLM gate costing 9 points, PROGRESS.md SS11).
+            dampened = scores.copy()
+            for w, (i0, i1, _, _) in enumerate(spans):
+                if bank.is_ood(f[i0:i1]):
+                    for c in FRAGILE_CLASSES:
+                        dampened[w, L2I[c]] *= 0.5
+            ivs_kept = PP.extract(dampened, spans, scale=a.scale, long_merge=a.long_merge)
+            ivs = PP.never_silence(ivs_raw, ivs_kept)
         if verifier and ivs:
             from .verify import verify_intervals
             ivs = verify_intervals(verifier, v.path, ivs, keep_score=a.keep_score, k=a.vlm_frames)
@@ -311,8 +336,20 @@ def cmd_bench(a):
 
 
 def cmd_novelty(a):
-    """Build the open-set novelty bank from cached training embeddings."""
+    """Build the open-set novelty bank from cached training embeddings.
+
+    Two fixes from 2026-09-05 (both found by checking this module before
+    trusting it as an abstention signal, not by inspection):
+      - the bank used to be built from `normal` only, which is 72% scenic
+        aerial footage -- ordinary traffic would itself look "novel"
+        against it. --bank-from all asks "is this scene type in training
+        at all", which is what abstention on unseen cameras actually needs.
+      - calibration used to run on normal clips that were THEMSELVES in the
+        bank (self-referential, biases the threshold artificially tight).
+        Now split by video: fit the bank on 80%, calibrate on the other 20%.
+    """
     from .openset import NoveltyBank
+    import random as _random
     emb = Embedder(a.model, dtype=a.dtype)
     vids = _videos("train", a.data)
     by = {}
@@ -327,13 +364,38 @@ def cmd_novelty(a):
             by.setdefault(c, []).append(f[::4])
         if i % 50 == 0:
             print(f"  {i}/{len(vids)}")
-    bank = NoveltyBank.fit(by, bank_size=a.bank_size)
-    held = by.get(NORMAL, [])
+
+    calib_pool = by.get(NORMAL, []) if a.bank_from == "normal" else         [arr for arrs in by.values() for arr in arrs]
+    rng = _random.Random(0)
+    idx = list(range(len(calib_pool)))
+    rng.shuffle(idx)
+    n_held = max(1, int(len(idx) * 0.2))
+    held_idx, fit_idx = set(idx[:n_held]), set(idx[n_held:])
+
+    if a.bank_from == "normal":
+        fit_by = {NORMAL: [calib_pool[i] for i in fit_idx]}
+    else:
+        # rebuild `by` restricted to the fit half so held-out videos never
+        # leak into the bank, regardless of which class they came from
+        fit_by, seen = {}, 0
+        for c, arrs in by.items():
+            keep = []
+            for arr in arrs:
+                if seen not in held_idx:
+                    keep.append(arr)
+                seen += 1
+            if keep:
+                fit_by[c] = keep
+
+    bank = NoveltyBank.fit(fit_by, bank_size=a.bank_size)
+    held = [calib_pool[i] for i in held_idx]
     if held:
         import numpy as _np
-        scores = _np.array([bank.distance(x) for x in held[: min(300, len(held))]])
-        thr = bank.calibrate(scores, q=a.quantile)
-        print(f"novelty threshold calibrated on normal footage: {thr:.3f}")
+        scores = _np.array([bank.distance(x) for x in held])
+        thr = bank.calibrate_dist(scores, q=a.quantile)
+        print(f"[novelty] bank-from={a.bank_from}, fit on {len(fit_idx)} clips, "
+              f"held out {len(held)} for calibration")
+        print(f"distance threshold (is_ood) calibrated on held-out footage: {thr:.3f}")
     out = OUT / "novelty.npz"
     bank.save(out)
     print(f"saved {out}")
@@ -480,6 +542,11 @@ def main():
                          "The spec requires reported time to include decoding; without this "
                          "a cached run reports ~25ms for a 4-minute video and overstates "
                          "the latency bonus. Use for the run you actually submit.")
+    sp.add_argument("--novelty", default=None,
+                    help="path to a novelty.npz from `vad.cli novelty` -- dampens "
+                         "FRAGILE_CLASSES scores on out-of-distribution windows. "
+                         "Off by default; never fully silences a video (see "
+                         "postprocess.never_silence).")
     sp.add_argument("--only", default="",
                     help="comma-separated video ids to run (e.g. the 24 Level-1 clips); "
                          "others are skipped entirely. Combine with `submit` -- the arena "
@@ -531,6 +598,10 @@ def main():
     sp = sub.add_parser("novelty")
     sp.add_argument("--bank-size", type=int, default=4000)
     sp.add_argument("--quantile", type=float, default=0.98)
+    sp.add_argument("--bank-from", dest="bank_from", default="all", choices=["normal", "all"],
+                    help="'normal' (old default) is 72%% scenic aerial -- ordinary "
+                         "traffic looks novel against it. 'all' asks whether this "
+                         "SCENE TYPE is in training at all, any class.")
     sp.set_defaults(fn=cmd_novelty)
 
     sp = sub.add_parser("stream")
